@@ -15,8 +15,8 @@
 #include <Shared_Attribute_Update.h>
 #include <ThingsBoard.h>
 
-constexpr char WIFI_SSID[] = "Paulo";
-constexpr char WIFI_PASSWORD[] = "15151515";
+constexpr char WIFI_SSID[] = "";
+constexpr char WIFI_PASSWORD[] = "";
 
 // See https://thingsboard.io/docs/getting-started-guides/helloworld/
 // to understand how to obtain an access token
@@ -28,9 +28,9 @@ constexpr char WIFI_PASSWORD[] = "15151515";
 }
 */
 
-constexpr char CLIENT_TOKEN[] = "5ckwcyv84e2gbhsrf0tp";
-constexpr char CLIENT_ID[] = "y1rfbrst5qg5cqjd2238";
-constexpr char CLIENT_PASSWORD[] = "dxrmht7pa7l40s5dmf1h";
+constexpr char CLIENT_TOKEN[] = "5ckwcyv84e2gbhsrf0tp"; // userName
+constexpr char CLIENT_ID[] = "y1rfbrst5qg5cqjd2238"; // clientId
+constexpr char CLIENT_PASSWORD[] = "dxrmht7pa7l40s5dmf1h"; // password
 
 // Thingsboard we want to establish a connection too
 constexpr char THINGSBOARD_SERVER[] = "192.168.0.106";
