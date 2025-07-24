@@ -1,0 +1,78 @@
+services:
+  postgres:
+    restart: always
+    image: "postgres:16"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: thingsboard
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  kafka:
+    image: apache/kafka:latest
+    depends_on:
+      - zookeeper
+    restart: always
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    ports:
+      - "9092:9092"
+
+  zookeeper:
+    #image: confluentinc/cp-zookeeper:7.4.0
+    image: zookeeper
+    restart: always
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      -  8081:8080
+
+  thingsboard-ce:
+    restart: always
+    image: "thingsboard/tb-node:4.1.0"
+    depends_on:
+      - postgres
+      - kafka
+      - adminer
+
+    ports:
+      - "8080:8080" # UI
+      - "7070:7070"
+      - "1883:1883" #MQTT
+      - "8883:8883" #MQTT TLS
+      - "5683-5688:5683-5688/udp" #CoAP
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "10"
+    volumes:
+      #-  ./config/thingsboard.conf:/config/thingsboard.conf
+      -  ./config/ssl:/etc/thingsboard/ssl
+    environment:
+      TB_SERVICE_ID: tb-ce-node
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/thingsboard
+      TB_QUEUE_TYPE: kafka
+      TB_TRANSPORT_TYPE: mqtt
+      SSL_ENABLED: "true"
+      SSL_CREDENTIALS_TYPE: "PEM"
+      SSL_PEM_CERT: "./etc/thingsboard/ssl/server.pem"
+      SSL_PEM_KEY: "./etc/thingsboard/ssl/server_key.pem"
+      SSL_PEM_KEY_PASSWORD: "secret"
+
+volumes:
+  postgres-data:
+    name: tb-postgres-data
+    driver: local
