@@ -1,4 +1,4 @@
-#!/home/server/Documentos/ThingsBoard/devices/.venv/bin/python3
+#!/home/davi/Documentos/ThingsBoard/devices/.venv/bin/python3
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 """

@@ -1,4 +1,4 @@
-#!/home/server/Documentos/ThingsBoard/devices/.venv/bin/python3
+#!/home/davi/Documentos/ThingsBoard/devices/.venv/bin/python3
 #-------------------------------------------------------------------------------
 # scripts/readelf.py
 #
