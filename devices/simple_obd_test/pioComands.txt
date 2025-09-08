@@ -1,0 +1,85 @@
+ 1098  pio run
+ 1440  pio init
+ 1443  pio run
+ 1445  pio run
+ 1449  pio run
+ 1700  pio run
+ 1706  pio run
+ 1708  pio
+ 1716  pio -h
+ 1746  pio run
+ 1751  pio run
+ 1753  pio run
+ 1754  pio lib search mqtt
+ 1755  pio lib install MQTT Client
+ 1777  pio run
+ 1779  pio run
+ 1796  pio run
+ 1797  pio lib install ThingsBoard@0.14.0
+ 1798  pio run
+ 1799  pio lib insall PubSubClient
+ 1800  pio lib install PubSubClient
+ 1801  pio run
+ 1802  pio lib list
+ 1803  pio lib unistall MQTT
+ 1804  pio lib uninstall MQTT
+ 1805  pio lib list
+ 1806  pio run
+ 1807  pio lib list
+ 1808  pio lib uninstall PubSubClient
+ 1809  pio lib uninstall client
+ 1810  pio lib uninstall 
+ 1811  pio run
+ 1812  pio lib install 
+ 1813  pio run
+ 1814  pio lib install MQTTClient
+ 1815  pio lib list
+ 1816  pio run
+ 1817  pio list
+ 1818  pio lib list
+ 1819  pio lib unistall MQTTClient
+ 1820  pio lib uninstall MQTTClient
+ 1821  pio lib list
+ 1822  pio run
+ 1823  pio lib install MQTTClient
+ 1824  pio run
+ 1831  pio run
+ 1833  pio run
+ 1839  pio run
+ 1843  pio run
+ 1844  pio lib uninstall Thingsboard
+ 1845  pio run
+ 1848  pio run
+ 1850  pio run
+ 1855  pio run
+ 1856  pio lib -h
+ 1857  pio lib update
+ 1858  pio pkg update
+ 1859  pio run
+ 1862  pio run
+ 1863  pio lib list
+ 1864  pio lib uninstall MQTTClient
+ 1865  pio lib list
+ 1866  pio lib install PubSubClient
+ 1867  pio run
+ 1892  pio run
+ 1893  less pio run
+ 1894  less {pio run}
+ 1895  pio run
+ 1897  pio run
+ 1898  pio lib list
+ 1899  pio lib install Arduino_MQTT_Client
+ 1900  pio pkg install
+ 1901  pio lib list
+ 1907  pio lib list
+ 1908  pio lib uninstall client MQTT 
+ 1909  pio lib list
+ 1910  pio lib install ThingsBoard@0.14.0
+ 1911  pio run
+ 2088  pio run
+ 2091  pio run
+ 2093  history | grep "pio run"
+ 2094  history | grep "pio run --"
+ 2095  history | grep "pio run -"
+ 2096  history | grep "pio run "
+ 2097  history | grep "pio" > pioComands.txt
