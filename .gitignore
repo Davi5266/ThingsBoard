@@ -41,3 +41,5 @@
 
 # debug information files
 *.dwo
+
+config_credentials.h
