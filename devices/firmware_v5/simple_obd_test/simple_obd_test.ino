@@ -32,8 +32,8 @@
 #include <Shared_Attribute_Update.h>
 
 // WiFi config
-constexpr char WIFI_SSID[] = "";
-constexpr char WIFI_PASSWORD[] = "";
+constexpr char WIFI_SSID[] = "Paulo";
+constexpr char WIFI_PASSWORD[] = "15151515";
 
 // {
 //clientId:"q1fxlsmwkncve5gzrgua",
@@ -350,27 +350,6 @@ void loop() {
     tb.sendTelemetryData("speed", value);
     obd.readPID(PID_RPM, value);
     tb.sendTelemetryData("rpm", value);
-    
-    /* GPS DATA*/
-    obd.readPID(PID_GPS_ALTITUDE, value);
-    tb.sendAttributeData("gps_altitude", value);
-    obd.readPID(PID_GPS_DATE, value);
-    tb.sendAttributeData("gps_date", value);
-    obd.readPID(PID_GPS_HDOP, value);
-    tb.sendAttributeData("gps_hdop", value);
-    obd.readPID(PID_GPS_HEADING, value);
-    tb.sendAttributeData("gps_heading", value);
-    obd.readPID(PID_GPS_LATITUDE, value);
-    tb.sendAttributeData("gps_latitude", value);
-    obd.readPID(PID_GPS_LONGITUDE, value);
-    tb.sendAttributeData("gps_longitude", value);
-    obd.readPID(PID_GPS_SAT_COUNT, value);
-    tb.sendAttributeData("gps_sat_count", value);
-    obd.readPID(PID_GPS_SPEED, value);
-    tb.sendAttributeData("gps_speed", value);
-    obd.readPID(PID_GPS_TIME, value);
-    tb.sendAttributeData("gps_time", value);
-
     tb.sendTelemetryData("cputemp", readChipTemperature());
     tb.sendAttributeData("state", obd.getState());
     // tb.sendTelemetryJson("datateste");
