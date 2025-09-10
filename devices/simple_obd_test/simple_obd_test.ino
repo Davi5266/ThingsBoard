@@ -23,6 +23,7 @@
 #define LED_BUILTIN 99
 #endif
 
+#include "config_credentials.h"
 #include <FreematicsPlus.h> // Funcões do freematics
 // Funcões e configurações para comunicação com o ThingsBoard
 #include <ThingsBoard.h>
@@ -32,8 +33,8 @@
 #include <Shared_Attribute_Update.h>
 
 // WiFi config
-constexpr char WIFI_SSID[] = "";
-constexpr char WIFI_PASSWORD[] = "";
+constexpr char WIFI_SSID[] = CONFIG_WIFI_SSID;
+constexpr char WIFI_PASSWORD[] = CONFIG_WIFI_PASSWORD;
 
 // {
 //clientId:"q1fxlsmwkncve5gzrgua",
@@ -42,12 +43,12 @@ constexpr char WIFI_PASSWORD[] = "";
 // }
 
 // MQTT config
-constexpr char CLIENT_TOKEN[] = "yuz8y66lc3efgxwwa5yi";
-constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua";
-constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s";
+constexpr char CLIENT_TOKEN[] = CONFIG_MQTT_CLIENT_TOKEN;
+constexpr char CLIENT_ID[] = CONFIG_MQTT_CLIENT_ID;
+constexpr char CLIENT_PASSWORD[] = CONFIG_MQTT_CLIENT_PASSWORD;
 
 // Configurações de comunicação com o servidor
-constexpr char THINGSBOARD_SERVER[] = "192.168.0.107";
+constexpr char THINGSBOARD_SERVER[] = CONFIG_THINGSBOARD_SERVER;
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
 constexpr uint32_t MAX_MESSAGE_SIZE = 1024U;
 
@@ -264,7 +265,7 @@ void loop() {
     return;
   }
 
-  if( !reconnect()){
+  if(!reconnect()){
     return;
   }
 
@@ -351,25 +352,32 @@ void loop() {
     obd.readPID(PID_RPM, value);
     tb.sendTelemetryData("rpm", value);
     
+    obd.readPID(PID_THROTTLE, value);
+    tb.sendTelemetryData("throttle", value);
+    obd.readPID(PID_MAF_FLOW, value);
+    tb.sendTelemetryData("maf",value);
+    obd.readPID(PID_INTAKE_MAP, value);
+    tb.sendTelemetryData("map", value);
+
     /* GPS DATA*/
-    obd.readPID(PID_GPS_ALTITUDE, value);
-    tb.sendAttributeData("gps_altitude", value);
-    obd.readPID(PID_GPS_DATE, value);
-    tb.sendAttributeData("gps_date", value);
-    obd.readPID(PID_GPS_HDOP, value);
-    tb.sendAttributeData("gps_hdop", value);
-    obd.readPID(PID_GPS_HEADING, value);
-    tb.sendAttributeData("gps_heading", value);
-    obd.readPID(PID_GPS_LATITUDE, value);
-    tb.sendAttributeData("gps_latitude", value);
-    obd.readPID(PID_GPS_LONGITUDE, value);
-    tb.sendAttributeData("gps_longitude", value);
-    obd.readPID(PID_GPS_SAT_COUNT, value);
-    tb.sendAttributeData("gps_sat_count", value);
-    obd.readPID(PID_GPS_SPEED, value);
-    tb.sendAttributeData("gps_speed", value);
-    obd.readPID(PID_GPS_TIME, value);
-    tb.sendAttributeData("gps_time", value);
+    // obd.readPID(PID_GPS_ALTITUDE, value);
+    // tb.sendAttributeData("gps_altitude", value);
+    // obd.readPID(PID_GPS_DATE, value);
+    // tb.sendAttributeData("gps_date", value);
+    // obd.readPID(PID_GPS_HDOP, value);
+    // tb.sendAttributeData("gps_hdop", value);
+    // obd.readPID(PID_GPS_HEADING, value);
+    // tb.sendAttributeData("gps_heading", value);
+    // obd.readPID(PID_GPS_LATITUDE, value);
+    // tb.sendAttributeData("gps_latitude", value);
+    // obd.readPID(PID_GPS_LONGITUDE, value);
+    // tb.sendAttributeData("gps_longitude", value);
+    // obd.readPID(PID_GPS_SAT_COUNT, value);
+    // tb.sendAttributeData("gps_sat_count", value);
+    // obd.readPID(PID_GPS_SPEED, value);
+    // tb.sendAttributeData("gps_speed", value);
+    // obd.readPID(PID_GPS_TIME, value);
+    // tb.sendAttributeData("gps_time", value);
 
     tb.sendTelemetryData("cputemp", readChipTemperature());
     tb.sendAttributeData("state", obd.getState());
