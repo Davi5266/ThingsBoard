@@ -44,12 +44,12 @@ constexpr char WIFI_PASSWORD[] = CONFIG_WIFI_PASSWORD;
 // }
 
 // MQTT config
-constexpr char CLIENT_TOKEN[] = "yuz8y66lc3efgxwwa5yi";
-constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua";
-constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s";
+constexpr char CLIENT_TOKEN[] = CONFIG_CLIENT_TOKEN;
+constexpr char CLIENT_ID[] = CONFIG_CLIENT_ID;
+constexpr char CLIENT_PASSWORD[] = CONFIG_CLIENT_PASSWORD;
 
 // Configurações de comunicação com o servidor
-constexpr char THINGSBOARD_SERVER[] = "192.168.0.107";
+constexpr char THINGSBOARD_SERVER[] = CONFIG_THINGSBOARD_SERVER;
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
 constexpr uint32_t MAX_MESSAGE_SIZE = 1024U;
 
