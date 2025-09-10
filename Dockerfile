@@ -1,0 +1,8 @@
+FROM ThingsBoard
+
+ENV POSTGRES_DB=""
+ENV POSTGRES_PASSWORD=""
+LABEL description=""
+
+VOLUME ./data
+EXPOSE 8081
