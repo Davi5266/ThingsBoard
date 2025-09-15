@@ -70,7 +70,7 @@ WiFiClient wifiClient;
 // Arduino_MQTT_Client mqttClient(wifiClient);
 
 
-#define PIN_LED 4
+// #define PIN_LED 4
 
 // Initalize the Mqtt client instance
 Arduino_MQTT_Client mqttClient(wifiClient);
@@ -237,10 +237,10 @@ unsigned long count = 0;
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(PIN_LED, OUTPUT);
-  digitalWrite(PIN_LED, HIGH);
-  delay(1000);
-  digitalWrite(PIN_LED, LOW);
+  // pinMode(PIN_LED, OUTPUT);
+  // digitalWrite(PIN_LED, HIGH);
+  // delay(1000);
+  // digitalWrite(PIN_LED, LOW);
   Serial.begin(115200);
 
   // initializations
@@ -250,18 +250,17 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(PIN_LED, HIGH);
+  // digitalWrite(PIN_LED, HIGH);
   // put your main code here, to run repeatedly:
   if (!connected) {
-    digitalWrite(PIN_LED, HIGH);
+    // digitalWrite(PIN_LED, HIGH);
     Serial.print("Connecting to OBD...");
     if (obd.init()) {
-      Serial.println("OK");
       connected = true;
     } else {
       Serial.println();
     }
-    digitalWrite(PIN_LED, LOW);
+    // digitalWrite(PIN_LED, LOW);
     return;
   }
 
@@ -280,35 +279,35 @@ void loop() {
       return;
     }
     // Sending a MAC address as an attribute
-    tb.sendAttributeData("macAddress", WiFi.macAddress().c_str());
+    //tb.sendAttributeData("macAddress", WiFi.macAddress().c_str());
 
-    Serial.println("Subscribing for RPC...");
+    //Serial.println("Subscribing for RPC...");
     // Perform a subscription. All consequent data processing will happen in
     // processSetLedState() and processSetLedMode() functions,
     // as denoted by callbacks array.
-    if (!rpc.RPC_Subscribe(callbacks.cbegin(), callbacks.cend())) {
-      Serial.println("Failed to subscribe for RPC");
-      return;
-    }
+    //if (!rpc.RPC_Subscribe(callbacks.cbegin(), callbacks.cend())) {
+      //Serial.println("Failed to subscribe for RPC");
+      //return;
+    //}
 
-    if (!shared_update.Shared_Attributes_Subscribe(attributes_callback)) {
-      Serial.println("Failed to subscribe for shared attribute updates");
-      return;
-    }
+    //if (!shared_update.Shared_Attributes_Subscribe(attributes_callback)) {
+     // Serial.println("Failed to subscribe for shared attribute updates");
+     // return;
+    //}
 
-    Serial.println("Subscribe done");
+    //Serial.println("Subscribe done");
 
     // Request current states of shared attributes
-    if (!attr_request.Shared_Attributes_Request(attribute_shared_request_callback)) {
-      Serial.println("Failed to request for shared attributes");
-      return;
-    }
+   // if (!attr_request.Shared_Attributes_Request(attribute_shared_request_callback)) {
+   //   Serial.println("Failed to request for shared attributes");
+   //   return;
+   // }
 
     // Request current states of client attributes
-    if (!attr_request.Client_Attributes_Request(attribute_client_request_callback)) {
-      Serial.println("Failed to request for client attributes");
-      return;
-    }
+    //if (!attr_request.Client_Attributes_Request(attribute_client_request_callback)) {
+     // Serial.println("Failed to request for client attributes");
+     // return;
+   // }
   }
   
   if(!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN,THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)){
@@ -317,26 +316,26 @@ void loop() {
   }
 
   int value;
-  Serial.print('[');
-  Serial.print(millis());
-  Serial.print("] #");
-  Serial.print(count++);
-  if (obd.readPID(PID_RPM, value)) {
-    Serial.print(" RPM:");
-    Serial.print(value);
-  }
-  if (obd.readPID(PID_SPEED, value)) {
-    Serial.print(" SPEED:");
-    Serial.print(value);
-  }
+  //Serial.print('[');
+  //Serial.print(millis());
+  //Serial.print("] #");
+  //Serial.print(count++);
+  //if (obd.readPID(PID_RPM, value)) {
+   // Serial.print(" RPM:");
+   // Serial.print(value);
+ // }
+  //if (obd.readPID(PID_SPEED, value)) {
+   // Serial.print(" SPEED:");
+   // Serial.print(value);
+ // }
 
-  Serial.print(" BATTERY:");
-  Serial.print(obd.getVoltage());
-  Serial.print('V');
+ // Serial.print(" BATTERY:");
+ // Serial.print(obd.getVoltage());
+ // Serial.print('V');
 
-  Serial.print(" CPU TEMP:");
-  Serial.print(readChipTemperature());
-  Serial.println();
+ // Serial.print(" CPU TEMP:");
+ // Serial.print(readChipTemperature());
+ // Serial.println();
   if (obd.errors > 2) {
     Serial.println("OBD disconnected");
     connected = false;
@@ -394,5 +393,5 @@ void loop() {
 
   tb.loop();
 
-  // delay(100);
+  delay(100);
 }

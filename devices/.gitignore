@@ -1,3 +1,5 @@
-.vscode
+config_credentials.h
 .pio
+.vscode
 .venv
+
