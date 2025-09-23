@@ -1,0 +1,491 @@
+--- Terminal on /dev/ttyUSB0 | 115200 8-N-1
+--- Available filters and text transformations: colorize, debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at https://bit.ly/pio-monitor-filters
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+Connecting to AP ...
+........Connected to AP
+GPS iniciado com sucesso!
+Connecting to AP ...
+.Connected to AP
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+Subscribing for RPC...
+Subscribe done
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Attribute request timed out did not receive a response in (5000000) microseconds. Ensure client is connected to the MQTT broker and that the keys actually exist on the target device
+Attribute request timed out did not receive a response in (5000000) microseconds. Ensure client is connected to the MQTT broker and that the keys actually exist on the target device
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+[138680][E][WiFiClient.cpp:429] write(): fail on fd 48, errno: 113, "Software caused connection abort"
+GPS falhou
+Connecting to AP ...
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Connected to AP
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+[TB] Subscribing the given topic (v1/devices/me/rpc/request/+) failed
+[TB] Subscribing the given topic (v1/devices/me/attributes) failed
+[TB] Connecting to server failed
+Failed to connect
+Aguardando fix GPS... Satélites: 0
+Connecting to: 192.168.37.114 with token yuz8y66lc3efgxwwa5yi
+Subscribing for RPC...
+Subscribe done
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Attribute request timed out did not receive a response in (5000000) microseconds. Ensure client is connected to the MQTT broker and that the keys actually exist on the target device
+Attribute request timed out did not receive a response in (5000000) microseconds. Ensure client is connected to the MQTT broker and that the keys actually exist on the target device
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou
+Aguardando fix GPS... Satélites: 0
+Aguardando fix GPS... Satélites: 0
+GPS falhou

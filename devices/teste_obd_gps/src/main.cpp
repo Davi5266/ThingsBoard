@@ -1,17 +1,7 @@
-/******************************************************************************
-* Simple OBD test sketch for Freematics ONE+
-* Written by Stanley Huang <stanley@freematics.com.au>
-* Distributed under BSD license
-* Visit https://freematics.com/products for hardware information
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE.
-******************************************************************************/
+#include <Arduino.h>
+#define FREEMATICS_DEBUG // logs detalhados
+#include <FreematicsPlus.h>
+
 #if defined(ESP8266)
 #include <ESP8266WiFi.h>
 #define THINGSBOARD_ENABLE_PROGMEM 0
@@ -23,40 +13,47 @@
 #define LED_BUILTIN 99
 #endif
 
-#include "config_credentials.h"
-#include <FreematicsPlus.h> // Funcões do freematics
-// Funcões e configurações para comunicação com o ThingsBoard
-#include <ThingsBoard.h>
 #include <Arduino_MQTT_Client.h>
 #include <Server_Side_RPC.h>
 #include <Attribute_Request.h>
 #include <Shared_Attribute_Update.h>
+#include <ThingsBoard.h>
 
-// WiFi config
-constexpr char WIFI_SSID[] = CONFIG_WIFI_SSID;
-constexpr char WIFI_PASSWORD[] = CONFIG_WIFI_PASSWORD;
+constexpr char WIFI_SSID[] = "WebTeste";
+constexpr char WIFI_PASSWORD[] = "123123123";
 
-// {
-//clientId:"q1fxlsmwkncve5gzrgua",
-//userName:"yuz8y66lc3efgxwwa5yi",
-//password:"y7k1si0qrili2yvt1y9s"
-// }
+// See https://thingsboard.io/docs/getting-started-guides/helloworld/
+// to understand how to obtain an access token
+/*
+{
+  clientId:"q1fxlsmwkncve5gzrgua",
+  userName:"yuz8y66lc3efgxwwa5yi",
+  password:"y7k1si0qrili2yvt1y9s"
+  }
+*/
 
-// MQTT config
-constexpr char CLIENT_TOKEN[] = CONFIG_MQTT_CLIENT_TOKEN;
-constexpr char CLIENT_ID[] = CONFIG_MQTT_CLIENT_ID;
-constexpr char CLIENT_PASSWORD[] = CONFIG_MQTT_CLIENT_PASSWORD;
+constexpr char CLIENT_TOKEN[] = "yuz8y66lc3efgxwwa5yi"; // userName
+constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
+constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
 
-// Configurações de comunicação com o servidor
-constexpr char THINGSBOARD_SERVER[] = CONFIG_THINGSBOARD_SERVER;
+// Thingsboard we want to establish a connection too
+constexpr char THINGSBOARD_SERVER[] = "192.168.37.114";
+// MQTT port used to communicate with the server, 1883 is the default unencrypted MQTT port.
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
+
+// Maximum size packets will ever be sent or received by the underlying MQTT client,
+// if the size is to small messages might not be sent or received messages will be discarded
 constexpr uint32_t MAX_MESSAGE_SIZE = 1024U;
 
+// Baud rate for the debugging serial connection.
+// If the Serial output is mangled, ensure to change the monitor speed accordingly to this variable
 constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U;
+
+// Maximum amount of attributs we can request or subscribe, has to be set both in the ThingsBoard template list and Attribute_Request_Callback template list
+// and should be the same as the amount of variables in the passed array. If it is less not all variables will be requested or subscribed
 constexpr size_t MAX_ATTRIBUTES = 3U;
 
-constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;  
-
+constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
 
 // Attribute names for attribute request and attribute updates functionality
 
@@ -64,13 +61,8 @@ constexpr const char BLINKING_INTERVAL_ATTR[] = "blinkingInterval";
 constexpr const char LED_MODE_ATTR[] = "ledMode";
 constexpr const char LED_STATE_ATTR[] = "ledState";
 
-
+// Initialize underlying client, used to establish a connection
 WiFiClient wifiClient;
-
-// Arduino_MQTT_Client mqttClient(wifiClient);
-
-
-// #define PIN_LED 4
 
 // Initalize the Mqtt client instance
 Arduino_MQTT_Client mqttClient(wifiClient);
@@ -229,46 +221,123 @@ const Shared_Attribute_Callback<MAX_ATTRIBUTES> attributes_callback(&processShar
 const Attribute_Request_Callback<MAX_ATTRIBUTES> attribute_shared_request_callback(&processSharedAttributes, REQUEST_TIMEOUT_MICROSECONDS, &requestTimedOut, SHARED_ATTRIBUTES_LIST);
 const Attribute_Request_Callback<MAX_ATTRIBUTES> attribute_client_request_callback(&processClientAttributes, REQUEST_TIMEOUT_MICROSECONDS, &requestTimedOut, CLIENT_ATTRIBUTES_LIST);
 
-
-FreematicsESP32 sys;
-COBD obd;
+// Freematics OBD config
+FreematicsESP32 sys; // Instancia o sistema Freematics
+// COBD obd;
 bool connected = false;
 unsigned long count = 0;
+GPS_DATA* gd = nullptr; // Ponteiro para os dados do GPS
+
+/// @brief Utiliza o bip(dispositivo sonoro interno o OBD) para enviar reposta sonora
+/// @param duration recebe um valor do tipo int que determina o tempo em que vai esta ativo
+void beep(int duration)
+{
+    // turn on buzzer at 2000Hz frequency 
+    sys.buzzer(2000);
+    delay(duration);
+    // turn off buzzer
+    sys.buzzer(0);
+}
+
+struct MAIN_GPS{
+  public:
+  float latitude = 0;
+  uint32_t ts_T = 0;
+  uint32_t date_T = 0;
+  uint32_t time_T = 0;
+  float lat_T = 0;
+  float lng_T = 0;
+  float alt_T = 0; /* meter */
+  float speed_T = 0; /* knot */
+  uint16_t heading_T = 0; /* degree */
+  uint8_t hdop_T = 0;
+  uint8_t sat_T = 0;
+  uint16_t sentences_T = 0;
+  uint16_t errors_T = 0;
+  bool gps_ok = false;
+  char msg[30] = "Nenhum dado GPS disponível ";
+};
+
+MAIN_GPS gps;
 
 void setup() {
-  // put your setup code here, to run once:
-  // pinMode(PIN_LED, OUTPUT);
-  // digitalWrite(PIN_LED, HIGH);
-  // delay(1000);
-  // digitalWrite(PIN_LED, LOW);
-  Serial.begin(115200);
-
-  // initializations
-  while (!sys.begin());
-  obd.begin(sys.link);
+    // Initialize serial connection for debugging
+  Serial.begin(SERIAL_DEBUG_BAUD);
+  if (LED_BUILTIN != 99) {
+    pinMode(LED_BUILTIN, OUTPUT);
+  }
+  delay(1000); // Pequeno atraso para estabilizar
   InitWiFi();
+  
+  sys.begin(); // Inicia o sistema Freematics
+  if (sys.gpsBegin()) { // Inicia o módulo GPS
+    Serial.println("GPS iniciado com sucesso!");
+  } else {
+    Serial.println("Falha ao iniciar o GPS!");
+  }
+
+  // obd.begin(sys.link);
+
+  InitWiFi(); // Inicializando a comunicação wifi
+
+  /* comunica que as configurações foram bem sucedidas */
+  beep(500);
+  delay(200);
+  beep(500);
 }
 
 void loop() {
-  // digitalWrite(PIN_LED, HIGH);
-  // put your main code here, to run repeatedly:
-  if (!connected) {
-    // digitalWrite(PIN_LED, HIGH);
-    Serial.print("Connecting to OBD...");
-    if (obd.init()) {
-      connected = true;
-    } else {
-      Serial.println();
-    }
-    // digitalWrite(PIN_LED, LOW);
-    return;
-  }
-
   if(!reconnect()){
+      delay(500);
+      beep(500);
+      delay(500);
+      beep(500);
+      delay(500);
+      beep(500);
     return;
   }
 
-  if(!tb.connected()){
+  /* Leitura do GPS */
+  if (sys.gpsGetData(&gd) && gd != nullptr) { // Obtém ponteiro para os dados do GPS
+    if (gd->sat >= 4) { // Verifica se há fix GPS (mínimo de 4 satélites)
+      Serial.print("Latitude: "); Serial.println(gd->lat, 6);
+      Serial.print("Longitude: "); Serial.println(gd->lng, 6);
+      Serial.print("Altitude: "); Serial.println(gd->alt, 2); // Metros
+      Serial.print("Velocidade: "); Serial.println(gd->speed * 1.852, 2); // Converte nós para km/h
+      Serial.print("Direção: "); Serial.println(gd->heading); // Graus
+      Serial.print("Satélites: "); Serial.println(gd->sat);
+      Serial.print("HDOP: "); Serial.println(gd->hdop); // Precisão
+      Serial.print("Data: "); Serial.println(gd->date); // Formato DDMMAA
+      Serial.print("Hora: "); Serial.println(gd->time); // Formato HHMMSSsss
+      Serial.print("Timestamp: "); Serial.println(gd->ts); // Milissegundos
+      gps.lat_T = gd -> lat, 6;
+      gps.lng_T = gd -> lng, 6;
+      gps.alt_T = gd -> alt, 2;
+      gps.speed_T = gd -> speed * 1.852, 2;
+      gps.heading_T = gd -> heading;
+      gps.sat_T = gd -> sat;
+      gps.hdop_T = gd -> hdop;
+      gps.date_T = gd -> date;
+      gps.time_T = gd -> time;
+      gps.ts_T = gd -> ts;
+      gps.gps_ok = false;
+    } else {
+      Serial.println("Aguardando fix GPS... Satélites: " + String(gd->sat));
+      gps.gps_ok = true;
+    }
+  } else {
+    Serial.println("Nenhum dado GPS disponível.");
+    gps.gps_ok = true;
+  }
+
+
+  delay(10);
+
+  if (!reconnect()) {
+    return;
+  }
+
+  if (!tb.connected()) {
     // Connect to the ThingsBoard
     Serial.print("Connecting to: ");
     Serial.print(THINGSBOARD_SERVER);
@@ -279,119 +348,99 @@ void loop() {
       return;
     }
     // Sending a MAC address as an attribute
-    //tb.sendAttributeData("macAddress", WiFi.macAddress().c_str());
+    tb.sendAttributeData("macAddress", WiFi.macAddress().c_str());
 
-    //Serial.println("Subscribing for RPC...");
+    Serial.println("Subscribing for RPC...");
     // Perform a subscription. All consequent data processing will happen in
     // processSetLedState() and processSetLedMode() functions,
     // as denoted by callbacks array.
-    //if (!rpc.RPC_Subscribe(callbacks.cbegin(), callbacks.cend())) {
-      //Serial.println("Failed to subscribe for RPC");
-      //return;
-    //}
+    if (!rpc.RPC_Subscribe(callbacks.cbegin(), callbacks.cend())) {
+      Serial.println("Failed to subscribe for RPC");
+      return;
+    }
 
-    //if (!shared_update.Shared_Attributes_Subscribe(attributes_callback)) {
-     // Serial.println("Failed to subscribe for shared attribute updates");
-     // return;
-    //}
+    if (!shared_update.Shared_Attributes_Subscribe(attributes_callback)) {
+      Serial.println("Failed to subscribe for shared attribute updates");
+      return;
+    }
 
-    //Serial.println("Subscribe done");
+    Serial.println("Subscribe done");
 
     // Request current states of shared attributes
-   // if (!attr_request.Shared_Attributes_Request(attribute_shared_request_callback)) {
-   //   Serial.println("Failed to request for shared attributes");
-   //   return;
-   // }
+    if (!attr_request.Shared_Attributes_Request(attribute_shared_request_callback)) {
+      Serial.println("Failed to request for shared attributes");
+      return;
+    }
 
     // Request current states of client attributes
-    //if (!attr_request.Client_Attributes_Request(attribute_client_request_callback)) {
-     // Serial.println("Failed to request for client attributes");
-     // return;
-   // }
-  }
-  
-  if(!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN,THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)){
-    Serial.print("Failed to connect");
-    return;
+    if (!attr_request.Client_Attributes_Request(attribute_client_request_callback)) {
+      Serial.println("Failed to request for client attributes");
+      return;
+    }
   }
 
-  int value;
-  //Serial.print('[');
-  //Serial.print(millis());
-  //Serial.print("] #");
-  //Serial.print(count++);
-  //if (obd.readPID(PID_RPM, value)) {
-   // Serial.print(" RPM:");
-   // Serial.print(value);
- // }
-  //if (obd.readPID(PID_SPEED, value)) {
-   // Serial.print(" SPEED:");
-   // Serial.print(value);
- // }
-
- // Serial.print(" BATTERY:");
- // Serial.print(obd.getVoltage());
- // Serial.print('V');
-
- // Serial.print(" CPU TEMP:");
- // Serial.print(readChipTemperature());
- // Serial.println();
-  if (obd.errors > 2) {
-    Serial.println("OBD disconnected");
-    connected = false;
-    obd.reset();
+  if (attributesChanged) {
+    attributesChanged = false;
+    if (ledMode == 0) {
+      previousStateChange = millis();
+    }
+    tb.sendTelemetryData(LED_MODE_ATTR, ledMode);
+    tb.sendTelemetryData(LED_STATE_ATTR, ledState);
+    tb.sendAttributeData(LED_MODE_ATTR, ledMode);
+    tb.sendAttributeData(LED_STATE_ATTR, ledState);
   }
-  digitalWrite(PIN_LED, LOW);
 
+  if (ledMode == 1 && millis() - previousStateChange > blinkingInterval) {
+    previousStateChange = millis();
+    ledState = !ledState;
+    tb.sendTelemetryData(LED_STATE_ATTR, ledState);
+    tb.sendAttributeData(LED_STATE_ATTR, ledState);
+    if (LED_BUILTIN == 99) {
+      Serial.print("LED state changed to: ");
+      Serial.println(ledState);
+    } else {
+      digitalWrite(LED_BUILTIN, ledState);
+    }
+  }
+
+  // Sending telemetry every telemetrySendInterval time
   if (millis() - previousDataSend > telemetrySendInterval) {
     previousDataSend = millis();
-    tb.sendTelemetryData("battery", obd.getVoltage());
-    obd.readPID(PID_SPEED, value);
-    tb.sendTelemetryData("speed", value);
-    obd.readPID(PID_RPM, value);
-    tb.sendTelemetryData("rpm", value);
-    
-    obd.readPID(PID_THROTTLE, value);
-    tb.sendTelemetryData("throttle", value);
-    obd.readPID(PID_MAF_FLOW, value);
-    tb.sendTelemetryData("maf",value);
-    obd.readPID(PID_INTAKE_MAP, value);
-    tb.sendTelemetryData("map", value);
-
-    /* GPS DATA*/
-    // obd.readPID(PID_GPS_ALTITUDE, value);
-    // tb.sendAttributeData("gps_altitude", value);
-    // obd.readPID(PID_GPS_DATE, value);
-    // tb.sendAttributeData("gps_date", value);
-    // obd.readPID(PID_GPS_HDOP, value);
-    // tb.sendAttributeData("gps_hdop", value);
-    // obd.readPID(PID_GPS_HEADING, value);
-    // tb.sendAttributeData("gps_heading", value);
-    // obd.readPID(PID_GPS_LATITUDE, value);
-    // tb.sendAttributeData("gps_latitude", value);
-    // obd.readPID(PID_GPS_LONGITUDE, value);
-    // tb.sendAttributeData("gps_longitude", value);
-    // obd.readPID(PID_GPS_SAT_COUNT, value);
-    // tb.sendAttributeData("gps_sat_count", value);
-    // obd.readPID(PID_GPS_SPEED, value);
-    // tb.sendAttributeData("gps_speed", value);
-    // obd.readPID(PID_GPS_TIME, value);
-    // tb.sendAttributeData("gps_time", value);
-
-    tb.sendTelemetryData("cputemp", readChipTemperature());
-    tb.sendAttributeData("state", obd.getState());
-    // tb.sendTelemetryJson("datateste");
-    // tb.sendAttributeData("speed", random(60, 100));
-    // tb.sendAttributeData("batery", random(50, 100));
+    tb.sendTelemetryData("temperature", random(10, 20));
+    tb.sendAttributeData("speed", random(60, 100));
+    tb.sendAttributeData("batery", random(50, 100));
     
     tb.sendAttributeData("rssi", WiFi.RSSI());
     tb.sendAttributeData("channel", WiFi.channel());
     tb.sendAttributeData("bssid", WiFi.BSSIDstr().c_str());
     tb.sendAttributeData("localIp", WiFi.localIP().toString().c_str());
     tb.sendAttributeData("ssid", WiFi.SSID().c_str());
+
+    if(gps.gps_ok){
+      Serial.println("GPS falhou");
+      tb.sendTelemetryData("msg", gps.msg); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
+      tb.sendTelemetryData("msg_02", "GPS falhou");
+      tb.sendAttributeData("msg_03", "GPS falhou");
+
+    }else{
+      Serial.println("GPS ok");
+      tb.sendTelemetryData("msg", "GPS ok");
+      // Telemtria do GPS
+      tb.sendTelemetryData("latitude", gps.lat_T);
+      tb.sendTelemetryData("longitude",gps.lng_T);
+      tb.sendTelemetryData("altitude",gps.alt_T);
+      tb.sendTelemetryData("velocidade",gps.speed_T);
+      tb.sendTelemetryData("direção",gps.heading_T);
+      tb.sendTelemetryData("satélites",gps.sat_T);
+      tb.sendTelemetryData("HDOP",gps.hdop_T);
+      tb.sendTelemetryData("data",gps.date_T);
+      tb.sendTelemetryData("hora",gps.time_T);
+      tb.sendTelemetryData("timestamp",gps.ts_T);
+    }
   }
 
-  tb.loop();
 
-  delay(100);
+  tb.loop();
+  gps.gps_ok = true;
+  delay(1000); // Aguarda 1 segundo
 }

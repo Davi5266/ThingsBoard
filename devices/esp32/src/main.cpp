@@ -1,3 +1,23 @@
+constexpr char WIFI_SSID[] = "WebTeste";
+constexpr char WIFI_PASSWORD[] = "123123123";
+
+// See https://thingsboard.io/docs/getting-started-guides/helloworld/
+// to understand how to obtain an access token
+/*
+{
+  clientId:"q1fxlsmwkncve5gzrgua",
+  userName:"yuz8y66lc3efgxwwa5yi",
+  password:"y7k1si0qrili2yvt1y9s"
+  }
+*/
+
+constexpr char CLIENT_TOKEN[] = "yuz8y66lc3efgxwwa5yi"; // userName
+constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
+constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
+
+// Thingsboard we want to establish a connection too
+constexpr char THINGSBOARD_SERVER[] = "192.168.37.114";
+
 #if defined(ESP8266)
 #include <ESP8266WiFi.h>
 #define THINGSBOARD_ENABLE_PROGMEM 0
@@ -15,25 +35,15 @@
 #include <Shared_Attribute_Update.h>
 #include <ThingsBoard.h>
 
-constexpr char WIFI_SSID[] = "";
-constexpr char WIFI_PASSWORD[] = "";
+// constexpr char WIFI_SSID[] = "YOUR_WIFI_SSID";
+// constexpr char WIFI_PASSWORD[] = "YOUR_WIFI_PASSWORD";
 
 // See https://thingsboard.io/docs/getting-started-guides/helloworld/
 // to understand how to obtain an access token
-/*
-{
-  clientId:"y1rfbrst5qg5cqjd2238",
-  userName:"5ckwcyv84e2gbhsrf0tp",
-  password:"dxrmht7pa7l40s5dmf1h"
-}
-*/
-
-constexpr char CLIENT_TOKEN[] = "5ckwcyv84e2gbhsrf0tp"; // userName
-constexpr char CLIENT_ID[] = "y1rfbrst5qg5cqjd2238"; // clientId
-constexpr char CLIENT_PASSWORD[] = "dxrmht7pa7l40s5dmf1h"; // password
+constexpr char TOKEN[] = "yAfr61sk3ICzeOGjFG2h";
 
 // Thingsboard we want to establish a connection too
-constexpr char THINGSBOARD_SERVER[] = "192.168.0.106";
+// constexpr char THINGSBOARD_SERVER[] = "demo.thingsboard.io";
 // MQTT port used to communicate with the server, 1883 is the default unencrypted MQTT port.
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
 
@@ -239,8 +249,8 @@ void loop() {
     Serial.print("Connecting to: ");
     Serial.print(THINGSBOARD_SERVER);
     Serial.print(" with token ");
-    Serial.println(CLIENT_TOKEN);
-    if (!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN, THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)) {
+    Serial.println(TOKEN);
+    if (!tb.connect(THINGSBOARD_SERVER, TOKEN, THINGSBOARD_PORT)) {
       Serial.println("Failed to connect");
       return;
     }
@@ -304,9 +314,6 @@ void loop() {
   if (millis() - previousDataSend > telemetrySendInterval) {
     previousDataSend = millis();
     tb.sendTelemetryData("temperature", random(10, 20));
-    tb.sendAttributeData("speed", random(60, 100));
-    tb.sendAttributeData("batery", random(50, 100));
-    
     tb.sendAttributeData("rssi", WiFi.RSSI());
     tb.sendAttributeData("channel", WiFi.channel());
     tb.sendAttributeData("bssid", WiFi.BSSIDstr().c_str());
@@ -316,4 +323,3 @@ void loop() {
 
   tb.loop();
 }
-

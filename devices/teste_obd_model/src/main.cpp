@@ -14,16 +14,24 @@
 #include <Arduino_MQTT_Client.h>
 
 // WiFi config
-constexpr char WIFI_SSID[] = "";
-constexpr char WIFI_PASSWORD[] = "";
+constexpr char WIFI_SSID[] = "WebTeste";
+constexpr char WIFI_PASSWORD[] = "123123123";
 
 // MQTT config
-constexpr char CLIENT_TOKEN[] = "";
-constexpr char CLIENT_ID[] = "";
-constexpr char CLIENT_PASSWORD[] = "";
+constexpr char CLIENT_TOKEN[] ="yuz8y66lc3efgxwwa5yi";
+constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua";
+constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s";
+
+/*
+{
+	clientId:"q1fxlsmwkncve5gzrgua",
+	userName:"yuz8y66lc3efgxwwa5yi",
+	password:"y7k1si0qrili2yvt1y9s"
+}
+*/
 
 // ThingsBoard config
-constexpr char THINGSBOARD_SERVER[] = "";
+constexpr char THINGSBOARD_SERVER[] = "192.168.37.114";
 constexpr uint16_t THINGSBOARD_PORT = 1883U;
 constexpr uint32_t MAX_MESSAGE_SIZE  = 1024U;
 
@@ -83,19 +91,26 @@ void beep(int duration)
     sys.buzzer(0);
 }
 
-float latitude;
-uint32_t ts_T;
-uint32_t date_T;
-uint32_t time_T;
-float lat_T;
-float lng_T;
-float alt_T; /* meter */
-float speed_T; /* knot */
-uint16_t heading_T; /* degree */
-uint8_t hdop_T;
-uint8_t sat_T;
-uint16_t sentences_T;
-uint16_t errors_T;
+struct MAIN_GPS{
+  public:
+  float latitude = 0;
+  uint32_t ts_T = 0;
+  uint32_t date_T = 0;
+  uint32_t time_T = 0;
+  float lat_T = 0;
+  float lng_T = 0;
+  float alt_T = 0; /* meter */
+  float speed_T = 0; /* knot */
+  uint16_t heading_T = 0; /* degree */
+  uint8_t hdop_T = 0;
+  uint8_t sat_T = 0;
+  uint16_t sentences_T = 0;
+  uint16_t errors_T = 0;
+  bool gps_ok = false;
+  char msg[30] = "Nenhum dado GPS disponível ";
+};
+
+MAIN_GPS gps;
 
 void setup() {
   Serial.begin(SERIAL_DEBUG_BAUD); // Inicia a comunicação serial
@@ -113,8 +128,9 @@ void setup() {
   InitWiFi(); // Inicializando a comunicação wifi
 
   /* comunica que as configurações foram bem sucedidas */
-  beep(100);
-  beep(100);
+  beep(500);
+  delay(200);
+  beep(500);
 }
 
 void loop() {
@@ -123,11 +139,22 @@ void loop() {
   if(!connected){
     if(obd.init()){
       connected = true;
+      delay(500);
+      beep(500);
+      delay(500);
+      beep(500);
+      delay(500);
     }
     return;
   }
 
   if(!reconnect()){
+      delay(500);
+      beep(500);
+      delay(500);
+      beep(500);
+      delay(500);
+      beep(500);
     return;
   }
 
@@ -158,39 +185,63 @@ void loop() {
       Serial.print("Data: "); Serial.println(gd->date); // Formato DDMMAA
       Serial.print("Hora: "); Serial.println(gd->time); // Formato HHMMSSsss
       Serial.print("Timestamp: "); Serial.println(gd->ts); // Milissegundos
-      lat_T = gd -> lat, 6;
-      lng_T = gd -> lng, 6;
-      alt_T = gd -> alt, 2;
-      speed_T = gd -> speed * 1.852, 2;
-      heading_T = gd -> heading;
-      sat_T = gd -> sat;
-      hdop_T = gd -> hdop;
-      date_T = gd -> date;
-      time_T = gd -> time;
-      ts_T = gd -> ts;
+      gps.lat_T = gd -> lat, 6;
+      gps.lng_T = gd -> lng, 6;
+      gps.alt_T = gd -> alt, 2;
+      gps.speed_T = gd -> speed * 1.852, 2;
+      gps.heading_T = gd -> heading;
+      gps.sat_T = gd -> sat;
+      gps.hdop_T = gd -> hdop;
+      gps.date_T = gd -> date;
+      gps.time_T = gd -> time;
+      gps.ts_T = gd -> ts;
     } else {
       Serial.println("Aguardando fix GPS... Satélites: " + String(gd->sat));
+      gps.gps_ok = true;
     }
   } else {
     Serial.println("Nenhum dado GPS disponível.");
+    gps.gps_ok = true;
   }
 
   if (millis() - previousDataSend > telemetrySendInterval){
     previousDataSend = millis();
 
-    tb.sendTelemetryData("battery", obd.getVoltage());
+    tb.sendTelemetryData("voltage", obd.getVoltage());
+
     obd.readPID(PID_THROTTLE, value);
     tb.sendTelemetryData("throttle", value);
-    tb.sendTelemetryData("latitude", lat_T);
-    tb.sendTelemetryData("longitude",lng_T);
-    tb.sendTelemetryData("altitude",alt_T);
-    tb.sendTelemetryData("velocidade",speed_T);
-    tb.sendTelemetryData("direção",heading_T);
-    tb.sendTelemetryData("satélites",sat_T);
-    tb.sendTelemetryData("HDOP",hdop_T);
-    tb.sendTelemetryData("data",date_T);
-    tb.sendTelemetryData("hora",time_T);
-    tb.sendTelemetryData("timestamp",ts_T);
+    obd.readPID(PID_BATTERY_VOLTAGE, value);
+    tb.sendTelemetryData("battery",value);
+    obd.readPID(PID_SPEED, value);
+    tb.sendTelemetryData("speed",value);
+    obd.readPID(PID_RPM, value);
+    tb.sendTelemetryData("rpm",value);
+    obd.readPID(PID_MAF_FLOW, value);
+    tb.sendTelemetryData("maf",value);
+    obd.readPID(PID_INTAKE_MAP, value);
+    tb.sendTelemetryData("map",value);
+    obd.readPID(PID_FUEL_LEVEL, value);
+    tb.sendTelemetryData("fuel_level",value);
+    obd.readPID(PID_AMBIENT_TEMP, value);
+    tb.sendTelemetryData("ambient_temp",value);
+
+    if(gps.gps_ok){
+      tb.sendTelemetryData("msg", gps.msg); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
+    }else{
+      tb.sendTelemetryData("msg", "GPS ok");
+      // Telemtria do GPS
+      tb.sendTelemetryData("latitude", gps.lat_T);
+      tb.sendTelemetryData("longitude",gps.lng_T);
+      tb.sendTelemetryData("altitude",gps.alt_T);
+      tb.sendTelemetryData("velocidade",gps.speed_T);
+      tb.sendTelemetryData("direção",gps.heading_T);
+      tb.sendTelemetryData("satélites",gps.sat_T);
+      tb.sendTelemetryData("HDOP",gps.hdop_T);
+      tb.sendTelemetryData("data",gps.date_T);
+      tb.sendTelemetryData("hora",gps.time_T);
+      tb.sendTelemetryData("timestamp",gps.ts_T);
+    }
   }
   tb.loop();
   delay(1000); // Aguarda 1 segundo
