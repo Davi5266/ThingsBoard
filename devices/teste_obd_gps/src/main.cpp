@@ -255,10 +255,9 @@ struct MAIN_GPS{
   uint16_t sentences_T = 0;
   uint16_t errors_T = 0;
   bool gps_ok = false;
-  char msg[30] = "Nenhum dado GPS disponível ";
+  char msg[30] = "Nenhum dado GPS disponível";
 };
 
-MAIN_GPS gps;
 
 void setup() {
     // Initialize serial connection for debugging
@@ -287,6 +286,8 @@ void setup() {
 }
 
 void loop() {
+  MAIN_GPS gps;
+
   if(!reconnect()){
       delay(500);
       beep(500);
@@ -409,33 +410,31 @@ void loop() {
     tb.sendTelemetryData("temperature", random(10, 20));
     tb.sendAttributeData("speed", random(60, 100));
     tb.sendAttributeData("batery", random(50, 100));
-    
+
     tb.sendAttributeData("rssi", WiFi.RSSI());
     tb.sendAttributeData("channel", WiFi.channel());
     tb.sendAttributeData("bssid", WiFi.BSSIDstr().c_str());
     tb.sendAttributeData("localIp", WiFi.localIP().toString().c_str());
     tb.sendAttributeData("ssid", WiFi.SSID().c_str());
+    
+    // Telemtria do GPS
+    tb.sendTelemetryData("latitude", gps.lat_T);
+    tb.sendTelemetryData("longitude",gps.lng_T);
+    tb.sendTelemetryData("altitude",gps.alt_T);
+    tb.sendTelemetryData("velocidade",gps.speed_T);
+    tb.sendTelemetryData("direção",gps.heading_T);
+    tb.sendTelemetryData("satélites",gps.sat_T);
+    tb.sendTelemetryData("HDOP",gps.hdop_T);
+    tb.sendTelemetryData("data",gps.date_T);
+    tb.sendTelemetryData("hora",gps.time_T);
+    tb.sendTelemetryData("timestamp",gps.ts_T);
 
     if(gps.gps_ok){
       Serial.println("GPS falhou");
       tb.sendTelemetryData("msg", gps.msg); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
-      tb.sendTelemetryData("msg_02", "GPS falhou");
-      tb.sendAttributeData("msg_03", "GPS falhou");
-
     }else{
       Serial.println("GPS ok");
       tb.sendTelemetryData("msg", "GPS ok");
-      // Telemtria do GPS
-      tb.sendTelemetryData("latitude", gps.lat_T);
-      tb.sendTelemetryData("longitude",gps.lng_T);
-      tb.sendTelemetryData("altitude",gps.alt_T);
-      tb.sendTelemetryData("velocidade",gps.speed_T);
-      tb.sendTelemetryData("direção",gps.heading_T);
-      tb.sendTelemetryData("satélites",gps.sat_T);
-      tb.sendTelemetryData("HDOP",gps.hdop_T);
-      tb.sendTelemetryData("data",gps.date_T);
-      tb.sendTelemetryData("hora",gps.time_T);
-      tb.sendTelemetryData("timestamp",gps.ts_T);
     }
   }
 

@@ -32,10 +32,10 @@ constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s";
 
 // ThingsBoard config
 constexpr char THINGSBOARD_SERVER[] = "192.168.37.114";
-constexpr uint16_t THINGSBOARD_PORT = 1883U;
+constexpr uint16_t THINGSBOARD_PORT = 1883U; // porta MQTT
 constexpr uint32_t MAX_MESSAGE_SIZE  = 1024U;
 
-constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U; // comunicação serial do esp32
+constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U; // comunicação serial do Freematics OBD
 constexpr size_t MAX_ATTRIBUTES = 3U;
 
 constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
@@ -110,8 +110,6 @@ struct MAIN_GPS{
   char msg[30] = "Nenhum dado GPS disponível ";
 };
 
-MAIN_GPS gps;
-
 void setup() {
   Serial.begin(SERIAL_DEBUG_BAUD); // Inicia a comunicação serial
   delay(1000); // Pequeno atraso para estabilizar
@@ -134,6 +132,7 @@ void setup() {
 }
 
 void loop() {
+  MAIN_GPS gps;
 
   // Verificando a comunicação CAN
   if(!connected){
@@ -163,9 +162,6 @@ void loop() {
       return;
     }
   }
-
-  int value;
-  obd.readPID(PID_RPM, value);
 
   if(obd.errors > 2){
     connected = false;
@@ -207,8 +203,13 @@ void loop() {
   if (millis() - previousDataSend > telemetrySendInterval){
     previousDataSend = millis();
 
-    tb.sendTelemetryData("voltage", obd.getVoltage());
-
+    // device status
+    tb.sendTelemetryData("device_voltage", obd.getVoltage());
+    tb.sendTelemetryData("state", obd.getState());
+    tb.sendTelemetryData("device_voltage", obd.getVoltage());
+    
+    // Status CAN
+    int value;
     obd.readPID(PID_THROTTLE, value);
     tb.sendTelemetryData("throttle", value);
     obd.readPID(PID_BATTERY_VOLTAGE, value);
@@ -225,22 +226,26 @@ void loop() {
     tb.sendTelemetryData("fuel_level",value);
     obd.readPID(PID_AMBIENT_TEMP, value);
     tb.sendTelemetryData("ambient_temp",value);
+    obd.readPID(PID_BATTERY_VOLTAGE, value);
+    tb.sendTelemetryData("battery_voltage",value);
+
+    // Telemtria do GPS
+    tb.sendTelemetryData("latitude", gps.lat_T);
+    tb.sendTelemetryData("longitude",gps.lng_T);
+    tb.sendTelemetryData("altitude",gps.alt_T);
+    tb.sendTelemetryData("velocidade",gps.speed_T);
+    tb.sendTelemetryData("direção",gps.heading_T);
+    tb.sendTelemetryData("satélites",gps.sat_T);
+    tb.sendTelemetryData("HDOP",gps.hdop_T);
+    tb.sendTelemetryData("data",gps.date_T);
+    tb.sendTelemetryData("hora",gps.time_T);
+    tb.sendTelemetryData("timestamp",gps.ts_T);    
 
     if(gps.gps_ok){
       tb.sendTelemetryData("msg", gps.msg); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
     }else{
       tb.sendTelemetryData("msg", "GPS ok");
-      // Telemtria do GPS
-      tb.sendTelemetryData("latitude", gps.lat_T);
-      tb.sendTelemetryData("longitude",gps.lng_T);
-      tb.sendTelemetryData("altitude",gps.alt_T);
-      tb.sendTelemetryData("velocidade",gps.speed_T);
-      tb.sendTelemetryData("direção",gps.heading_T);
-      tb.sendTelemetryData("satélites",gps.sat_T);
-      tb.sendTelemetryData("HDOP",gps.hdop_T);
-      tb.sendTelemetryData("data",gps.date_T);
-      tb.sendTelemetryData("hora",gps.time_T);
-      tb.sendTelemetryData("timestamp",gps.ts_T);
+
     }
   }
   tb.loop();
