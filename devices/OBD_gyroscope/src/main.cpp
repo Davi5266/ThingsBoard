@@ -3,6 +3,8 @@
 
 #define STATE_MEMS_READY 0x8
 
+#define ENABLE_MEMS true
+
 #if ENABLE_MEMS
 float accBias[3] = {0};
 float accSum[3] = {0};
