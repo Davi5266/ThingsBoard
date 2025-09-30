@@ -135,6 +135,7 @@ void loop() {
             Serial.print(mag[1]);
             Serial.print(" Z=");
             Serial.println(mag[2]);
+			Serial.print("\n");
         } else {
             Serial.println("Falha ao ler os dados do sensor");
         }
@@ -142,5 +143,5 @@ void loop() {
         Serial.println("Sensor não inicializado");
     }
 
-    delay(100); // Ajuste o intervalo de leitura conforme necessário
+    delay(1000); // Ajuste o intervalo de leitura conforme necessário
 }
