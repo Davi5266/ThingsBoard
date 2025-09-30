@@ -85,10 +85,10 @@ const bool reconnect() {
 void beep(int duration)
 {
     // turn on buzzer at 2000Hz frequency 
-    sys.buzzer(2000);
+    //sys.buzzer(2000);
     delay(duration);
     // turn off buzzer
-    sys.buzzer(0);
+    //sys.buzzer(0);
 }
 
 struct MAIN_GPS{
@@ -228,6 +228,12 @@ void loop() {
     tb.sendTelemetryData("ambient_temp",value);
     obd.readPID(PID_BATTERY_VOLTAGE, value);
     tb.sendTelemetryData("battery_voltage",value);
+    obd.readPID(PID_ENGINE_LOAD, value);
+    tb.sendTelemetryData("engine_load",value);
+    obd.readPID(PID_COOLANT_TEMP, value);
+    tb.sendTelemetryData("coolant_temp",value);
+    obd.readPID(PID_ODOMETER, value);
+    tb.sendTelemetryData("odometer",value);
 
     // Telemtria do GPS
     tb.sendTelemetryData("latitude", gps.lat_T);
