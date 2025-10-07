@@ -236,6 +236,11 @@ COBD obd;
 bool connected = false;
 unsigned long count = 0;
 
+void ObdReconnect(){
+  while(!sys.begin());
+  obd.begin(sys.link);
+}
+
 void setup() {
   // put your setup code here, to run once:
   // pinMode(PIN_LED, OUTPUT);
@@ -251,6 +256,7 @@ void setup() {
 }
 
 void loop() {
+  ObdReconnect();
   // digitalWrite(PIN_LED, HIGH);
   // put your main code here, to run repeatedly:
   if (!connected) {

@@ -7,35 +7,27 @@
 
 #include <Arduino.h>
 
-#define FREEMATICS_DEBUG // logs detalhados
-#include <FreematicsPlus.h>
+#define FREEMATICS_DEBUG // GPS logs details
+#include <FreematicsPlus.h> // OBD lib
 
 #include <ThingsBoard.h>
-#include <Arduino_MQTT_Client.h>
+#include <Arduino_MQTT_Client.h> // MQTT
 
 // WiFi config
 constexpr char WIFI_SSID[] = "WebTeste";
 constexpr char WIFI_PASSWORD[] = "123123123";
 
 // MQTT config
-constexpr char CLIENT_TOKEN[] ="yuz8y66lc3efgxwwa5yi";
-constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua";
-constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s";
-
-/*
-{
-	clientId:"q1fxlsmwkncve5gzrgua",
-	userName:"yuz8y66lc3efgxwwa5yi",
-	password:"y7k1si0qrili2yvt1y9s"
-}
-*/
+constexpr char CLIENT_TOKEN[] ="yuz8y66lc3efgxwwa5yi"; // userName
+constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
+constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
 
 // ThingsBoard config
-constexpr char THINGSBOARD_SERVER[] = "192.168.37.114";
-constexpr uint16_t THINGSBOARD_PORT = 1883U; // porta MQTT
+constexpr char THINGSBOARD_SERVER[] = "192.168.37.114"; // Host or link to server
+constexpr uint16_t THINGSBOARD_PORT = 1883U; // MQTT Port
 constexpr uint32_t MAX_MESSAGE_SIZE  = 1024U;
 
-constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U; // comunicação serial do Freematics OBD
+constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U; // serial camunication
 constexpr size_t MAX_ATTRIBUTES = 3U;
 
 constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
@@ -52,12 +44,17 @@ ThingsBoard tb(mqttClient, MAX_MESSAGE_SIZE, Default_Max_Stack_Size);
 constexpr int16_t telemetrySendInterval = 2000U;
 uint32_t previousDataSend;
 
+// K02d@v12025
+// curl -v -X POST --data "{"temperature":42,"humidity":73}" https://mobilidade.inmetro.gov.br/api/v1/08utdfxvbadhknv0szzj/telemetry --header "Content-Type:application/json"
+// mosquitto_pub -d -q 1 -h mobilidade.inmetro.gov.br -p 1883 -t v1/devices/me/telemetry -u "08utdfxvbadhknv0szzj" -m "{temperature:25}"
+// curl -v -X POST --data "{"attribute1": "value1", "attribute2":true, "attribute3": 43.0}" https://mobilidade.inmetro.gov.br/api/v1/08utdfxvbadhknv0szzj/attributes --header "Content-Type:application/json"
+
 // Freematics OBD config
-FreematicsESP32 sys; // Instancia o sistema Freematics
-COBD obd; // comunicação CAN
-bool connected = false;
+FreematicsESP32 sys; // Instances the system Freematics
+COBD obd; // communication CAN
+bool connected = false; // status communication OBD
 unsigned long count = 0;
-GPS_DATA* gd = nullptr; // Ponteiro para os dados do GPS
+GPS_DATA* gd = nullptr; // pointer GPS data
 
 #define STATE_MEMS_READY 0x8
 #define ENABLE_MEMS true
@@ -101,7 +98,6 @@ class STATE {
 };
 
 STATE state;
-GYROSCOPE gyroscope;
 /// @brief Inicia a conexão wifi
 void InitWiFi(){
 
@@ -191,6 +187,7 @@ void setup() {
 
 void loop() {
   MAIN_GPS gps;
+  GYROSCOPE gyroscope;
 
   // Verificando a comunicação CAN
   if(!connected){

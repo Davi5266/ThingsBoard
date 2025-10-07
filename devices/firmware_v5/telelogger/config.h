@@ -80,8 +80,8 @@
 #ifndef ENABLE_WIFI
 #define ENABLE_WIFI 1
 // WiFi settings
-#define WIFI_SSID "Paulo"
-#define WIFI_PASSWORD "15151515"
+#define WIFI_SSID "WebTeste"
+#define WIFI_PASSWORD "123123123"
 #endif 
 
 #ifndef SERVER_HOST
@@ -114,8 +114,8 @@
 #define WIFI_MESH_CHANNEL 13
 
 // WiFi AP settings
-#define WIFI_AP_SSID "TELELOGGER"
-#define WIFI_AP_PASSWORD "PASSWORD"
+#define WIFI_AP_SSID "OBD_TESTE"
+#define WIFI_AP_PASSWORD "123123123"
 
 // maximum consecutive communication errors before resetting network
 #define MAX_CONN_ERRORS_RECONNECT 5
