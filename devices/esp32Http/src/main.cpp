@@ -19,32 +19,7 @@
 #include <ThingsBoardHttp.h>
 #include <WiFiClientSecure.h>
 
-const char* root_ca = \
-"-----BEGIN CERTIFICATE-----\n"
-"MIID+TCCAuECFD7nkAwXgZXIDya2sCdLkwGuoE3kMA0GCSqGSIb3DQEBCwUAMIG4\n"
-"MQswCQYDVQQGEwI1NTEXMBUGA1UECAwOUmlvIGRlIEphbmVpcm8xFzAVBgNVBAcM\n"
-"DlJpbyBkZSBKYW5laXJvMRAwDgYDVQQKDAdJbm1ldHJvMQ4wDAYDVQQLDAVMYWlu\n"
-"ZjEiMCAGA1UEAwwZbW9iaWxpZGFkZS5pbm1ldHJvLmdvdi5icjExMC8GCSqGSIb3\n"
-"DQEJARYiZHNmZWxpekBjb2xhYm9yYWRvci5pbm1ldHJvLmdvdi5icjAeFw0yNTEw\n"
-"MDcxNDU3MjhaFw0yNjEwMDcxNDU3MjhaMIG4MQswCQYDVQQGEwI1NTEXMBUGA1UE\n"
-"CAwOUmlvIGRlIEphbmVpcm8xFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMRAwDgYD\n"
-"VQQKDAdJbm1ldHJvMQ4wDAYDVQQLDAVMYWluZjEiMCAGA1UEAwwZbW9iaWxpZGFk\n"
-"ZS5pbm1ldHJvLmdvdi5icjExMC8GCSqGSIb3DQEJARYiZHNmZWxpekBjb2xhYm9y\n"
-"YWRvci5pbm1ldHJvLmdvdi5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\n"
-"ggEBAPTEF1MjwtABPNXZA/mdRi8HGCmPeGSb0Yd46EUN6G2/vGs674sogxi6Ucng\n"
-"tsJSIvgH9o4su95PrNRP+fTL+wlNhV67j9V7NW/qXicRHzEvqVKrBwiObgj69X9u\n"
-"r09aIUyLa7J+LreaWb8EvYn4NLnWTISeg9kZLsbbiAxTvVMwm0fH2Xv9Xa79hhAz\n"
-"6S3EQFQA3zJJVAXnH/zokeQ4MrtHwdOJwFoORhN+F/+AIjxIJETPLPA4soPcxBym\n"
-"JqXJBUUxX8XSAHlbbJZtW5BZZ3GM5iu0BM9sV3sQcDMXhOjpzvFHrmrQu7qLcgS5\n"
-"4TwCSRubNj6q2pZDJv2xurXj090CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAGEfs\n"
-"ab9a3+s0Mr6KOfbI2+qD5wykIJuV4v2aX/Z7ZLrfg4EKSifjOJCr2MFXIOunqD1G\n"
-"4O+UKFkLAEudh9cgKjmaIGusys2PHYU8qF2sfpt6Mz/tNnThShDgnccGydVQqFjD\n"
-"Ekkd9JleGqTzuDX3lp3Cxyq+jwdFnviaumu6kdZInDNf+tZeXhySXHevnbDnpGC4\n"
-"DMy0mdzXF/L1k+paKFaFbgBfaJ3a0DXwgwFZltPM1I+yuaeVUA4Y3HOwd0wbDYGZ\n"
-"i5Wb7dCqAuZXQcOEB6dpCJ8yfuOqyXxicpALxYcwv51LTtx0OA36QIaV5ZsW/Qbg\n"
-"9504HrDs3ViX2cmnBQ==\n"
-"-----END CERTIFICATE-----\n"
-;
+const char* root_ca ="\n";
 
 constexpr char WIFI_SSID[] = "WebTeste";
 constexpr char WIFI_PASSWORD[] = "123123123";

@@ -1,11 +1,6 @@
-#if defined(ESP8266)
-#include <ESP8266WiFi.h>
-#define THINGSBOARD_ENABLE_PROGMEM 0
-#elif defined(ESP32) || defined(RASPBERRYPI_PICO) || defined(RASPBERRYPI_PICO_W)
 #include <WiFi.h>
-#endif
-
 #include <Arduino.h>
+#include <tuple>
 
 #define FREEMATICS_DEBUG // GPS logs details
 #include <FreematicsPlus.h> // OBD lib
@@ -23,7 +18,7 @@ constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
 constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
 
 // ThingsBoard config
-constexpr char THINGSBOARD_SERVER[] = "192.168.37.114"; // Host or link to server
+constexpr char THINGSBOARD_SERVER[] = "192.168.123.114"; // Host or link to server
 constexpr uint16_t THINGSBOARD_PORT = 1883U; // MQTT Port
 constexpr uint32_t MAX_MESSAGE_SIZE  = 1024U;
 
@@ -34,13 +29,13 @@ constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
 
 WiFiClient wifiClient;
 
-// Inicializando as instancias Mqtt client
+// Initializing Mqtt client instances
 Arduino_MQTT_Client mqttClient(wifiClient);
 
-// Inicializando as intancias do Thingsboard
+// Initializing Thingsboard instances
 ThingsBoard tb(mqttClient, MAX_MESSAGE_SIZE, Default_Max_Stack_Size);
 
-// Para telemetria
+// telemetry config
 constexpr int16_t telemetrySendInterval = 2000U;
 uint32_t previousDataSend;
 
@@ -68,7 +63,7 @@ float gyr[3] = {0};
 float mag[3] = {0};
 uint8_t accCount = 0;
 #endif
-/* dados do ICM_42627 */
+/*  data ICM_42627 */
 class GYROSCOPE {
   public:
     // giroscópio (deg/s)
@@ -84,10 +79,11 @@ class GYROSCOPE {
     float mag_y = 0;
     float mag_z = 0;
     // msg
-    char erroMsgData[33] = "Falha ao ler os dados do sensor";
-    char erroMsgInit[26] = "Sensor não inicializado"; 
+    char erroMsgData[33] = "Failed to read sensor data";
+    char erroMsgInit[26] = "Uninitialized sensor"; 
 };
 
+/* MEMS functions */
 MEMS_I2C* mems = 0;
 class STATE {
   public:
@@ -98,7 +94,8 @@ class STATE {
 };
 
 STATE state;
-/// @brief Inicia a conexão wifi
+
+/// @brief Init connection wifi
 void InitWiFi(){
 
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
@@ -107,8 +104,8 @@ void InitWiFi(){
   }
 }
 
-/// @brief Reconecta o wifi, caso ocorra alguma interferência
-/// @return Retorna true quando a conexão for bem sucedida
+/// @brief Reconnects the wifi in case any interference occurs
+/// @return Returns true when the connection is successful
 const bool reconnect() {
   const wl_status_t status = WiFi.status();
   if(status == WL_CONNECTED){
@@ -119,140 +116,154 @@ const bool reconnect() {
   return true;
 }
 
-/// @brief Utiliza o bip(dispositivo sonoro interno o OBD) para enviar reposta sonora
-/// @param duration recebe um valor do tipo int que determina o tempo em que vai esta ativo
+/// @brief It uses the beep (internal OBD sound device) to send sound response
+/// @param duration receives a value of type int that determines the time this asset goes
 void beep(int duration)
 {
     // turn on buzzer at 2000Hz frequency 
-    //sys.buzzer(2000);
+    sys.buzzer(2000);
     delay(duration);
     // turn off buzzer
-    //sys.buzzer(0);
+    sys.buzzer(0);
 }
 
+/* Data model for GPS */
 struct MAIN_GPS{
   public:
-  float latitude = 0;
-  uint32_t ts = 0;
-  uint32_t date = 0;
+  uint32_t ts = 0; // timestamp
+  uint32_t date = 0; 
   uint32_t time = 0;
-  float lat = 0;
-  float lng = 0;
+  float lat = 0; // latitude
+  float lng = 0; // longitude
   float alt = 0; /* meter */
   float speed = 0; /* knot */
   uint16_t heading = 0; /* degree */
-  uint8_t hdop = 0;
-  uint8_t sat = 0;
-  uint16_t sentences = 0;
-  uint16_t errors = 0;
-  bool gps_ok = false;
-  char msg[30] = "Nenhum dado GPS disponível ";
+  uint8_t hdop = 0; 
+  uint8_t sat = 0;  // satellites
+  uint16_t sentences = 0; // 
+  uint16_t errors = 0; // errors detected
+};
+
+int gpsStatus = 0; // Validates GPS startup
+
+typedef struct {
+  byte pid;
+  std::string telemetry;
+  // String telemetry;
+} PIDTELEMETRY;
+
+PIDTELEMETRY pidtelemetry[]={
+  {PID_THROTTLE, "throttle"},
+  {PID_BATTERY_VOLTAGE, "battery"},
+  {PID_SPEED, "speed"},
+  {PID_RPM, "rpm"},
+  {PID_MAF_FLOW, "maf"},
+  {PID_INTAKE_MAP, "map"},
+  {PID_FUEL_LEVEL, "fuel_level"},
+  {PID_AMBIENT_TEMP, "ambient_temp"},
+  {PID_BATTERY_VOLTAGE, "battery_voltage"},
+  {PID_ENGINE_LOAD, "engine_load"},
+  {PID_COOLANT_TEMP, "coolant_temp"},
+  {PID_ODOMETER, "odometer"},
+  {PID_ENGINE_OIL_TEMP, "engine_oil_temp"},
+  {PID_ENGINE_FUEL_RATE, "engine_fuel_rate"},
+  {PID_ENGINE_LOAD, "engine_load"},
+  {PID_ENGINE_REF_TORQUE, "engine_ref_torque"},
+  {PID_ENGINE_TORQUE_DEMANDED, "engine_torque_demanded"},
+  {PID_ENGINE_TORQUE_PERCENTAGE, "engine_torque_percentage"},
+  {PID_ABSOLUTE_ENGINE_LOAD, "absolute_engine_load"},
+  {PID_FUEL_INJECTION_TIMING, "fuel_injection_timing"},
 };
 
 void setup() {
-  Serial.begin(SERIAL_DEBUG_BAUD); // Inicia a comunicação serial
-  delay(1000); // Pequeno atraso para estabilizar
+  Serial.begin(SERIAL_DEBUG_BAUD); // Initiates serial communication
+  delay(1000); // Small delay to stabilize
   
-  //Inicialização do sensor
+  // Sensor initialization ICM_42627
   if(!state.check(STATE_MEMS_READY)){
-    Serial.print("MEMS: ");
+    // Serial.print("MEMS: ");
     mems = new ICM_42627;
     byte ret = mems->begin();
-    if(ret){
-      state.set(STATE_MEMS_READY);
-      Serial.println("ICM_42627 inicializado com sucesso");
-    }else {
-      Serial.println("Falha ao inicializar ICM_42627");
+    if(ret){ // ICM_42627 successfully initialized
+      state.set(STATE_MEMS_READY); 
+    }else { // Failure to initialize ICM_42627
       delete mems;
       mems = 0;
     }
   }
 
   sys.begin(); // Inicia o sistema Freematics
-  if (sys.gpsBegin()) { // Inicia o módulo GPS
-    Serial.println("GPS iniciado com sucesso!");
-  } else {
-    Serial.println("Falha ao iniciar o GPS!");
+  if (sys.gpsBegin()) { /*GPS started successfully */} 
+  else { // Failed to start GPS!
+    Serial.println("");
+    gpsStatus = 1; // Please note that the GPS module has not been initialized
   }
 
   obd.begin(sys.link);
 
-  InitWiFi(); // Inicializando a comunicação wifi
-
-  /* comunica que as configurações foram bem sucedidas */
-  beep(500);
-  delay(200);
-  beep(500);
+  InitWiFi(); 
 }
 
 void loop() {
   MAIN_GPS gps;
   GYROSCOPE gyroscope;
 
-  // Verificando a comunicação CAN
+  // Checking CAN communication
   if(!connected){
     if(obd.init()){
       connected = true;
-      delay(500);
-      beep(500);
-      delay(500);
-      beep(500);
-      delay(500);
     }
     return;
   }
-
+  // reconnect wifi
   if(!reconnect()){
-      delay(500);
-      beep(500);
-      delay(500);
-      beep(500);
-      delay(500);
-      beep(500);
     return;
   }
 
+  // connect thingsboard server
   if(!tb.connected()){
     if(!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN, THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)){
       return;
     }
   }
 
+  // detects errors in obd communication and reconnects communication
   if(obd.errors > 2){
     connected = false;
     obd.reset();
   }
 
-  /* Leitura do GPS */
-  if (sys.gpsGetData(&gd) && gd != nullptr) { // Obtém ponteiro para os dados do GPS
-    if (gd->sat >= 4) { // Verifica se há fix GPS (mínimo de 4 satélites)
-      Serial.print("Latitude: "); Serial.println(gd->lat, 6);
-      Serial.print("Longitude: "); Serial.println(gd->lng, 6);
-      Serial.print("Altitude: "); Serial.println(gd->alt, 2); // Metros
-      Serial.print("Velocidade: "); Serial.println(gd->speed * 1.852, 2); // Converte nós para km/h
-      Serial.print("Direção: "); Serial.println(gd->heading); // Graus
-      Serial.print("Satélites: "); Serial.println(gd->sat);
-      Serial.print("HDOP: "); Serial.println(gd->hdop); // Precisão
-      Serial.print("Data: "); Serial.println(gd->date); // Formato DDMMAA
-      Serial.print("Hora: "); Serial.println(gd->time); // Formato HHMMSSsss
-      Serial.print("Timestamp: "); Serial.println(gd->ts); // Milissegundos
+  /* GPS read */
+  int gpsTypeError = 0;
+  if (sys.gpsGetData(&gd) && gd != nullptr) { // Gets pointer to GPS data
+    if (gd->sat >= 4) { // Check for GPS fix (minimum of 4 satellites)
+    
+      // Serial.print("Latitude: "); Serial.println(gd->lat, 6);
+      // Serial.print("Longitude: "); Serial.println(gd->lng, 6);
+      // Serial.print("Altitude: "); Serial.println(gd->alt, 2); 
+      // Serial.print("Velocidade: "); Serial.println(gd->speed * 1.852, 2); // Converte nós para km/h
+      // Serial.print("Direção: "); Serial.println(gd->heading); // Graus
+      // Serial.print("Satélites: "); Serial.println(gd->sat);
+      // Serial.print("HDOP: "); Serial.println(gd->hdop); // Precisão
+      // Serial.print("Data: "); Serial.println(gd->date); // Formato DDMMAA
+      // Serial.print("Hora: "); Serial.println(gd->time); // Formato HHMMSSsss
+      // Serial.print("Timestamp: "); Serial.println(gd->ts); // Milissegundos
+    
       gps.lat = gd -> lat, 6;
       gps.lng = gd -> lng, 6;
-      gps.alt = gd -> alt, 2;
-      gps.speed = gd -> speed * 1.852, 2;
-      gps.heading = gd -> heading;
+      gps.alt = gd -> alt, 2; // Metros
+      gps.speed = gd -> speed * 1.852, 2; // Converte nós para km/h
+      gps.heading = gd -> heading; // Graus
       gps.sat = gd -> sat;
-      gps.hdop = gd -> hdop;
-      gps.date = gd -> date;
-      gps.time = gd -> time;
-      gps.ts = gd -> ts;
+      gps.hdop = gd -> hdop; // Precisão
+      gps.date = gd -> date; // Formato DDMMAA
+      gps.time = gd -> time; // Formato HHMMSSsss
+      gps.ts = gd -> ts; // Milissegundos
     } else {
-      Serial.println("Aguardando fix GPS... Satélites: " + String(gd->sat));
-      gps.gps_ok = true;
+      gpsTypeError = 2;
     }
   } else {
-    Serial.println("Nenhum dado GPS disponível.");
-    gps.gps_ok = true;
+    gpsTypeError = 1;
   }
 
   int gyrosStates = 0;
@@ -273,7 +284,7 @@ void loop() {
       gyrosStates = 1;
     }
   }else{
-      gyrosStates = 2;
+    gyrosStates = 2;
   }
 
   if (millis() - previousDataSend > telemetrySendInterval){
@@ -285,66 +296,43 @@ void loop() {
     tb.sendTelemetryData("device_temp",obd.readPID(PID_DEVICE_TEMP, value));
 
     // Status CAN
-    obd.readPID(PID_THROTTLE, value);
-    tb.sendTelemetryData("throttle", value);
-    obd.readPID(PID_BATTERY_VOLTAGE, value);
-    tb.sendTelemetryData("battery",value);
-    obd.readPID(PID_SPEED, value);
-    tb.sendTelemetryData("speed",value);
-    obd.readPID(PID_RPM, value);
-    tb.sendTelemetryData("rpm",value);
-    obd.readPID(PID_MAF_FLOW, value);
-    tb.sendTelemetryData("maf",value);
-    obd.readPID(PID_INTAKE_MAP, value);
-    tb.sendTelemetryData("map",value);
-    obd.readPID(PID_FUEL_LEVEL, value);
-    tb.sendTelemetryData("fuel_level",value);
-    obd.readPID(PID_AMBIENT_TEMP, value);
-    tb.sendTelemetryData("ambient_temp",value);
-    obd.readPID(PID_BATTERY_VOLTAGE, value);
-    tb.sendTelemetryData("battery_voltage",value);
-    obd.readPID(PID_ENGINE_LOAD, value);
-    tb.sendTelemetryData("engine_load",value);
-    obd.readPID(PID_COOLANT_TEMP, value);
-    tb.sendTelemetryData("coolant_temp",value);
-    obd.readPID(PID_ODOMETER, value);
-    tb.sendTelemetryData("odometer",value);
-    obd.readPID(PID_ENGINE_OIL_TEMP, value);
-    tb.sendTelemetryData("engine_oil_temp", value);
-    obd.readPID(PID_ENGINE_FUEL_RATE, value);
-    tb.sendTelemetryData("engine_fuel_rate", value);
-    obd.readPID(PID_ENGINE_LOAD, value);
-    tb.sendTelemetryData("engine_load", value);
-    obd.readPID(PID_ENGINE_REF_TORQUE, value);
-    tb.sendTelemetryData("engine_ref_torque", value);
-    obd.readPID(PID_ENGINE_TORQUE_DEMANDED, value);
-    tb.sendTelemetryData("engine_torque_demanded", value);
-    obd.readPID(PID_ENGINE_TORQUE_PERCENTAGE, value);
-    tb.sendTelemetryData("engine_torque_percentage", value);
-    obd.readPID(PID_ABSOLUTE_ENGINE_LOAD, value);
-    tb.sendTelemetryData("absolute_engine_load", value);
-    obd.readPID(PID_FUEL_INJECTION_TIMING, value);
-    tb.sendTelemetryData("fuel_injection_timing", value);
+    // for(int i = 0; i < 18; i++){
 
-    // Telemtria do GPS
-    tb.sendTelemetryData("gps_lat", gps.lat);
-    tb.sendTelemetryData("gps_lng",gps.lng);
-    tb.sendTelemetryData("gps_alt",gps.alt);
-    tb.sendTelemetryData("gps_speed",gps.speed);
-    tb.sendTelemetryData("gps_heading",gps.heading);
-    tb.sendTelemetryData("gps_sat",gps.sat);
-    tb.sendTelemetryData("gps_hdop",gps.hdop);
-    tb.sendTelemetryData("gps_date",gps.date);
-    tb.sendTelemetryData("gps_time",gps.time);
-    tb.sendTelemetryData("timestamp",gps.ts);    
-
-    if(gps.gps_ok){
-      tb.sendTelemetryData("msg", gps.msg); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
-    }else{
-      tb.sendTelemetryData("msg", "GPS ok");
+    for(int i = 0; i < sizeof(pidtelemetry)/ sizeof(pidtelemetry[0]);i++){
+      printf("o");
+      int value;
+      obd.readPID(pidtelemetry[i].pid,value);
+      // String telemetryData = String(pidtelemetry[i].telemetry);
+      std::string car = pidtelemetry[i].telemetry;
+      // const char tetete[] = pidfood[i].name;
+      tb.sendTelemetryData(car, value);
     }
 
-    // Telemetria do ICM_42627
+    // GPS telemetry data
+    if( gpsStatus == 0){
+      tb.sendTelemetryData("gps_lat", gps.lat);
+      tb.sendTelemetryData("gps_lng",gps.lng);
+      tb.sendTelemetryData("gps_alt",gps.alt);
+      tb.sendTelemetryData("gps_speed",gps.speed);
+      tb.sendTelemetryData("gps_heading",gps.heading);
+      tb.sendTelemetryData("gps_sat",gps.sat);
+      tb.sendTelemetryData("gps_hdop",gps.hdop);
+      tb.sendTelemetryData("gps_date",gps.date);
+      tb.sendTelemetryData("gps_time",gps.time);
+      tb.sendTelemetryData("timestamp",gps.ts);    
+
+      if(gpsStatus == 1){
+        tb.sendTelemetryData("gps_msg", "No GPS data available"); // Mensagem caso satélite esteja fora do ar ou não consiga se comunicar
+      }else if(gpsStatus == 2){
+        tb.sendTelemetryData("gps_msg", "Waiting to fix GPS Satellites");
+      } else {
+        tb.sendTelemetryData("gps_msg","gps ok");
+      }
+    } else {
+      tb.sendTelemetryData("gps_msg","");
+    }
+
+    // ICM_42627 telemetry data
     if(gyrosStates == 1){
       tb.sendTelemetryData("msg", gyroscope.erroMsgData);
     } else if (gyrosStates == 2)
@@ -367,5 +355,5 @@ void loop() {
 
   }
   tb.loop();
-  delay(1000); // Aguarda 1 segundo
+  delay(1000); // stop 1 second
 }
