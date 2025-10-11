@@ -297,7 +297,7 @@ void loop() {
     tb.sendTelemetryData("device_cpu_freq", ESP.getCpuFreqMHz());
     tb.sendTelemetryData("device_free_heap", ESP.getFreeHeap());
     tb.sendTelemetryData("device_heap_size", ESP.getHeapSize());
-   //tb.sendTelemetryData("device_chip_id", ESP.getChipId());
+    tb.sendTelemetryData("device_chip_id", ESP.getChipId());
     tb.sendTelemetryData("device_cycle_count", ESP.getCycleCount());
     // Status CAN
     // for(int i = 0; i < 18; i++){
