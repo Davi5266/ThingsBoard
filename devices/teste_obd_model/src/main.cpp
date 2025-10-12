@@ -1,25 +1,29 @@
+// #include "Client.h"
+#include "FreematicsBase.h"
 #include <WiFi.h>
 #include <Arduino.h>
-#include <tuple>
+// #include <cstdint>
+// #include <tuple>
 
 #define FREEMATICS_DEBUG // GPS logs details
 #include <FreematicsPlus.h> // OBD lib
 
 #include <ThingsBoard.h>
 #include <Arduino_MQTT_Client.h> // MQTT
+#include <Arduino_HTTP_Client.h> // HTTP
+#include <ThingsBoardHttp.h>
+#include <WiFiClientSecure.h>
+
+// WiFiClient client;
+WiFiClientSecure client;
 
 // WiFi config
 constexpr char WIFI_SSID[] = "WebTeste";
 constexpr char WIFI_PASSWORD[] = "123123123";
 
-// MQTT config
-constexpr char CLIENT_TOKEN[] ="yuz8y66lc3efgxwwa5yi"; // userName
-constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
-constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
-
 // ThingsBoard config
 constexpr char THINGSBOARD_SERVER[] = "192.168.123.114"; // Host or link to server
-constexpr uint16_t THINGSBOARD_PORT = 1883U; // MQTT Port
+// constexpr uint16_t THINGSBOARD_PORT = 1883U; // MQTT Port
 constexpr uint32_t MAX_MESSAGE_SIZE  = 1024U;
 
 constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U; // serial camunication
@@ -27,13 +31,33 @@ constexpr size_t MAX_ATTRIBUTES = 3U;
 
 constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
 
-WiFiClient wifiClient;
-
+#define THINGSBOARD_SSL 0
+// config thingsboard protocol
+#define THINGSBOARD_PROTOCOL 1
+#if THINGSBOARD_PROTOCOL == 0
+constexpr uint16_t THINGSBOARD_PORT = 1883U;
+// MQTT config
+constexpr char CLIENT_TOKEN[] ="yuz8y66lc3efgxwwa5yi"; // userName
+constexpr char CLIENT_ID[] = "q1fxlsmwkncve5gzrgua"; // clientId
+constexpr char CLIENT_PASSWORD[] = "y7k1si0qrili2yvt1y9s"; // password
 // Initializing Mqtt client instances
-Arduino_MQTT_Client mqttClient(wifiClient);
-
+Arduino_MQTT_Client mqttClient(client);
 // Initializing Thingsboard instances
 ThingsBoard tb(mqttClient, MAX_MESSAGE_SIZE, Default_Max_Stack_Size);
+#elif THINGSBOARD_PROTOCOL == 1
+// HTTP config
+constexpr char TOKEN[] = "v1";
+constexpr uint16_t THINGSBOARD_PORT = 80U;
+const char* root_ca =\
+      "-----BEGIN CERTIFICATE-----\n" \
+      "-----END CERTIFICATE-----\n";
+// You can use x.509 client certificates if you want
+const char* client_key = "";
+const char* client_cert = "";
+// Initalize the http client instance
+Arduino_HTTP_Client httpClient(client,THINGSBOARD_SERVER, THINGSBOARD_PORT);
+ThingsBoardHttp tb(httpClient, TOKEN, THINGSBOARD_SERVER, THINGSBOARD_PORT);
+#endif
 
 // telemetry config
 constexpr int16_t telemetrySendInterval = 2000U;
@@ -201,7 +225,13 @@ void setup() {
 
   obd.begin(sys.link);
 
-  InitWiFi(); 
+  InitWiFi();
+  if(THINGSBOARD_PROTOCOL == 1){
+    client.setCACert(root_ca);
+    client.setCertificate(client_cert); // for client verification
+    client.setPrivateKey(client_key);	// for client verification    return;
+  }
+
 }
 
 void loop() {
@@ -221,11 +251,18 @@ void loop() {
   }
 
   // connect thingsboard server
-  if(!tb.connected()){
-    if(!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN, THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)){
-      return;
-    }
-  }
+  // if(!tb.connected()){
+  //   // if(THINGSBOARD_PROTOCOL == 0){
+  //   //   if(!tb.connect(THINGSBOARD_SERVER, CLIENT_TOKEN, THINGSBOARD_PORT, CLIENT_ID, CLIENT_PASSWORD)){
+  //   //     return;
+  //   //   }
+  //   // } else 
+  //   if (THINGSBOARD_PROTOCOL == 1) {
+  //     if(!tb.connect(THINGSBOARD_SERVER, THINGSBOARD_PORT)){
+  //       return;
+  //     }
+  //   }
+  // }
 
   // detects errors in obd communication and reconnects communication
   if(obd.errors > 2){
@@ -292,13 +329,14 @@ void loop() {
     int value;
     // device status
     tb.sendTelemetryData("device_voltage", obd.getVoltage());
-    tb.sendTelemetryData("state", obd.getState());
+    tb.sendTelemetryData("device_state", obd.getState());
     tb.sendTelemetryData("device_temp",obd.readPID(PID_DEVICE_TEMP, value));
-    tb.sendTelemetryData("device_cpu_freq", ESP.getCpuFreqMHz());
-    tb.sendTelemetryData("device_free_heap", ESP.getFreeHeap());
-    tb.sendTelemetryData("device_heap_size", ESP.getHeapSize());
-   //tb.sendTelemetryData("device_chip_id", ESP.getChipId());
-    tb.sendTelemetryData("device_cycle_count", ESP.getCycleCount());
+    tb.sendTelemetryData("device_hall", obd.readPID(PID_DEVICE_HALL,value));
+  //   tb.sendTelemetryData("device_cpu_freq", ESP.getCpuFreqMHz());
+  //   tb.sendTelemetryData("device_free_heap", ESP.getFreeHeap());
+  //   tb.sendTelemetryData("device_heap_size", ESP.getHeapSize());
+  //  //tb.sendTelemetryData("device_chip_id", ESP.getChipId());
+  //   tb.sendTelemetryData("device_cycle_count", ESP.getCycleCount());
     // Status CAN
     // for(int i = 0; i < 18; i++){
 
@@ -358,6 +396,6 @@ void loop() {
     
 
   }
-  tb.loop();
+  // tb.loop();
   delay(1000); // stop 1 second
 }
