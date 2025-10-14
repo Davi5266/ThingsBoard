@@ -1,96 +1,146 @@
-#if defined(ESP8266)
+#ifdef ESP8266
 #include <ESP8266WiFi.h>
-#define THINGSBOARD_ENABLE_PROGMEM 0
-#elif defined(ESP32) || defined(RASPBERRYPI_PICO) || defined(RASPBERRYPI_PICO_W)
+#else
+#ifdef ESP32
 #include <WiFi.h>
-#endif
+#include <WiFiClientSecure.h>
+#endif // ESP32
+#endif // ESP8266
 
-#ifndef LED_BUILTIN
-#define LED_BUILTIN 99
-#endif
 
-#include <Arduino_MQTT_Client.h>
-#include <Server_Side_RPC.h>
-#include <Attribute_Request.h>
-#include <Shared_Attribute_Update.h>
-#include <ThingsBoard.h>
+// Sending data can either be done over MQTT and the PubSubClient
+// or HTTPS and the HTTPClient, when using the ESP32 or ESP8266
+#define USING_HTTPS true
 
+// Whether the given script is using encryption or not,
+// generally recommended as it increases security (communication with the server is not in clear text anymore),
+// it does come with an overhead tough as having an encrypted session requires a lot of memory,
+// which might not be avaialable on lower end devices.
+#define ENCRYPTED false
+
+// Enables sending messages that are bigger than the predefined message size,
+// where the message will be sent byte by byte as a fallback instead.
+// Requires an additional library, see https://github.com/bblanchon/ArduinoStreamUtils for more information.
+// Simply install that library and the feature will be enabled automatically.
+
+// Enables the ThingsBoard class to be fully dynamic instead of requiring template arguments to statically allocate memory.
+// If enabled the program might be slightly slower and all the memory will be placed onto the heap instead of the stack.
+#define THINGSBOARD_ENABLE_DYNAMIC 1
+
+// If the THINGSBOARD_ENABLE_DYNAMIC 1 setting causes this error log message to appear [TB] Unable to de-serialize received json data with error (DeserializationError::NoMemory).
+// Simply add this configuration line as well.
+//#define THINGSBOARD_ENABLE_PSRAM 0
+
+
+#if USING_HTTPS
 #include <Arduino_HTTP_Client.h>
 #include <ThingsBoardHttp.h>
-#include <WiFiClientSecure.h>
+#else
+#include <Arduino_MQTT_Client.h>
+#include <ThingsBoard.h>
+#endif
 
-const char* root_ca ="\n";
+constexpr char WIFI_SSID[] = "";
+constexpr char WIFI_PASSWORD[] = "";
 
-constexpr char WIFI_SSID[] = "WebTeste";
-constexpr char WIFI_PASSWORD[] = "123123123";
-
-// See https://thingsboard.io/docs/pe/getting-started-guides/helloworld/
+// See https://thingsboard.io/docs/getting-started-guides/helloworld/
 // to understand how to obtain an access token
-constexpr char TOKEN[] = "v1";
+constexpr char TOKEN[] = "";
 
 // Thingsboard we want to establish a connection too
 constexpr char THINGSBOARD_SERVER[] = "";
-// MQTT port used to communicate with the server, 1883 is the default unencrypted MQTT port.
+
+#if USING_HTTPS
+// HTTP port used to communicate with the server, 80 is the default unencrypted HTTP port,
+// whereas 443 would be the default encrypted SSL HTTPS port
+#if ENCRYPTED
+constexpr uint16_t THINGSBOARD_PORT = 443U;
+#else
 constexpr uint16_t THINGSBOARD_PORT = 80U;
+#endif
+#else
+// MQTT port used to communicate with the server, 1883 is the default unencrypted MQTT port,
+// whereas 8883 would be the default encrypted SSL MQTT port
+#if ENCRYPTED
+constexpr uint16_t THINGSBOARD_PORT = 8883U;
+#else
+constexpr uint16_t THINGSBOARD_PORT = 1883U;
+#endif
+#endif
 
 // Maximum size packets will ever be sent or received by the underlying MQTT client,
 // if the size is to small messages might not be sent or received messages will be discarded
-constexpr uint32_t MAX_MESSAGE_SIZE = 1024U;
+constexpr uint16_t MAX_MESSAGE_SEND_SIZE = 128U;
+constexpr uint16_t MAX_MESSAGE_RECEIVE_SIZE = 128U;
 
-// Baud rate for the debugging serial connection.
+// Baud rate for the debugging serial connection
 // If the Serial output is mangled, ensure to change the monitor speed accordingly to this variable
 constexpr uint32_t SERIAL_DEBUG_BAUD = 115200U;
 
-// Maximum amount of attributs we can request or subscribe, has to be set both in the ThingsBoard template list and Attribute_Request_Callback template list
-// and should be the same as the amount of variables in the passed array. If it is less not all variables will be requested or subscribed
-constexpr size_t MAX_ATTRIBUTES = 3U;
+#if ENCRYPTED
+// See https://comodosslstore.com/resources/what-is-a-root-ca-certificate-and-how-do-i-download-it/
+// on how to get the root certificate of the server we want to communicate with,
+// this is needed to establish a secure connection and changes depending on the website.
+constexpr char ROOT_CERT[] = R"(-----BEGIN CERTIFICATE-----
+MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw
+TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh
+cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4
+WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJu
+ZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBY
+MTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygc
+h77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+
+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6U
+A5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sW
+T8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyH
+B5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UC
+B5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUv
+KBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWn
+OlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTn
+jh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbw
+qHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CI
+rU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNV
+HRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkq
+hkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZL
+ubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ
+3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KK
+NFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5
+ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7Ur
+TkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdC
+jNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVc
+oyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq
+4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPA
+mRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57d
+emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=
+-----END CERTIFICATE-----
+)";
+#endif
 
-constexpr uint64_t REQUEST_TIMEOUT_MICROSECONDS = 5000U * 1000U;
+constexpr char CONNECTING_MSG[] = "Connecting to: (%s) with token (%s)\n";
+constexpr char DEVICE_TYPE_KEY[] = "device_type";
+constexpr char ACTIVE_KEY[] = "active";
+constexpr char SENSOR_VALUE[] = "sensor";
 
-// Attribute names for attribute request and attribute updates functionality
-
-constexpr const char BLINKING_INTERVAL_ATTR[] = "blinkingInterval";
-constexpr const char LED_MODE_ATTR[] = "ledMode";
-constexpr const char LED_STATE_ATTR[] = "ledState";
 
 // Initialize underlying client, used to establish a connection
-WiFiClient wifiClient;
-WiFiClientSecure secureClient;
-
-// Initalize the Mqtt client instance
-Arduino_HTTP_Client httpClient(secureClient,THINGSBOARD_SERVER, THINGSBOARD_PORT);
+#if ENCRYPTED
+WiFiClientSecure espClient;
+#else
+WiFiClient espClient;
+#endif
+// Initialize ThingsBoard instance with the maximum needed buffer size
+#if USING_HTTPS
+// Initalize the Http client instance
+Arduino_HTTP_Client httpClient(espClient, THINGSBOARD_SERVER, THINGSBOARD_PORT);
 ThingsBoardHttp tb(httpClient, TOKEN, THINGSBOARD_SERVER, THINGSBOARD_PORT);
+#else
+// Initalize the Mqtt client instance
+Arduino_MQTT_Client mqttClient(espClient);
+// Initialize used apis
+const std::array<IAPI_Implementation*, 0U> apis = {};
+// Initialize ThingsBoard instance with the maximum needed buffer size
+ThingsBoard tb(mqttClient, MAX_MESSAGE_RECEIVE_SIZE, MAX_MESSAGE_SEND_SIZE, Default_Max_Stack_Size, apis);
+#endif
 
-// handle led state and mode changes
-volatile bool attributesChanged = false;
-
-// LED modes: 0 - continious state, 1 - blinking
-volatile int ledMode = 0;
-
-// Current led state
-volatile bool ledState = false;
-
-// Settings for interval in blinking mode
-constexpr uint16_t BLINKING_INTERVAL_MS_MIN = 10U;
-constexpr uint16_t BLINKING_INTERVAL_MS_MAX = 60000U;
-volatile uint16_t blinkingInterval = 1000U;
-
-uint32_t previousStateChange;
-
-// For telemetry
-constexpr int16_t telemetrySendInterval = 2000U;
-uint32_t previousDataSend;
-
-// List of shared attributes for subscribing to their updates
-constexpr std::array<const char *, 2U> SHARED_ATTRIBUTES_LIST = {
-  LED_STATE_ATTR,
-  BLINKING_INTERVAL_ATTR
-};
-
-// List of client attributes for requesting them (Using to initialize device states)
-constexpr std::array<const char *, 1U> CLIENT_ATTRIBUTES_LIST = {
-  LED_MODE_ATTR
-};
 
 /// @brief Initalizes WiFi connection,
 // will endlessly delay until a connection has been successfully established
@@ -99,16 +149,19 @@ void InitWiFi() {
   // Attempting to establish a connection to the given WiFi network
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED) {
-    // Delay 500ms until a connection has been succesfully established
+    // Delay 500ms until a connection has been successfully established
     delay(500);
     Serial.print(".");
   }
   Serial.println("Connected to AP");
+#if ENCRYPTED
+  espClient.setCACert(ROOT_CERT);
+#endif
 }
 
 /// @brief Reconnects the WiFi uses InitWiFi if the connection has been removed
 /// @return Returns true as soon as a connection has been established again
-const bool reconnect() {
+bool reconnect() {
   // Check to ensure we aren't connected yet
   const wl_status_t status = WiFi.status();
   if (status == WL_CONNECTED) {
@@ -120,142 +173,68 @@ const bool reconnect() {
   return true;
 }
 
-
-/// @brief Processes function for RPC call "setLedMode"
-/// RPC_Data is a JSON variant, that can be queried using operator[]
-/// See https://arduinojson.org/v5/api/jsonvariant/subscript/ for more details
-/// @param data Data containing the rpc data that was called and its current value
-void processSetLedMode(const JsonVariantConst &data, JsonDocument &response) {
-  Serial.println("Received the set led state RPC method");
-
-  // Process data
-  int new_mode = data;
-
-  Serial.print("Mode to change: ");
-  Serial.println(new_mode);
-  StaticJsonDocument<1> response_doc;
-
-  if (new_mode != 0 && new_mode != 1) {
-    response_doc["error"] = "Unknown mode!";
-    response.set(response_doc);
-    return;
-  }
-
-  ledMode = new_mode;
-
-  attributesChanged = true;
-
-  // Returning current mode
-  response_doc["newMode"] = (int)ledMode;
-  response.set(response_doc);
-}
-
-
-// Optional, keep subscribed shared attributes empty instead,
-// and the callback will be called for every shared attribute changed on the device,
-// instead of only the one that were entered instead
-const std::array<RPC_Callback, 1U> callbacks = {
-  RPC_Callback{ "setLedMode", processSetLedMode }
-};
-
-
-/// @brief Update callback that will be called as soon as one of the provided shared attributes changes value,
-/// if none are provided we subscribe to any shared attribute change instead
-/// @param data Data containing the shared attributes that were changed and their current value
-void processSharedAttributes(const JsonObjectConst &data) {
-  for (auto it = data.begin(); it != data.end(); ++it) {
-    if (strcmp(it->key().c_str(), BLINKING_INTERVAL_ATTR) == 0) {
-      const uint16_t new_interval = it->value().as<uint16_t>();
-      if (new_interval >= BLINKING_INTERVAL_MS_MIN && new_interval <= BLINKING_INTERVAL_MS_MAX) {
-        blinkingInterval = new_interval;
-        Serial.print("Blinking interval is set to: ");
-        Serial.println(new_interval);
-      }
-    } else if (strcmp(it->key().c_str(), LED_STATE_ATTR) == 0) {
-      ledState = it->value().as<bool>();
-      if (LED_BUILTIN != 99) {
-        digitalWrite(LED_BUILTIN, ledState);
-      }
-      Serial.print("LED state is set to: ");
-      Serial.println(ledState);
-    }
-  }
-  attributesChanged = true;
-}
-
-void processClientAttributes(const JsonObjectConst &data) {
-  for (auto it = data.begin(); it != data.end(); ++it) {
-    if (strcmp(it->key().c_str(), LED_MODE_ATTR) == 0) {
-      const uint16_t new_mode = it->value().as<uint16_t>();
-      ledMode = new_mode;
-    }
-  }
-}
-
-// Attribute request did not receive a response in the expected amount of microseconds 
-void requestTimedOut() {
-  Serial.printf("Attribute request timed out did not receive a response in (%llu) microseconds. Ensure client is connected to the MQTT broker and that the keys actually exist on the target device\n", REQUEST_TIMEOUT_MICROSECONDS);
-}
-
-const Shared_Attribute_Callback<MAX_ATTRIBUTES> attributes_callback(&processSharedAttributes, SHARED_ATTRIBUTES_LIST.cbegin(), SHARED_ATTRIBUTES_LIST.cend());
-const Attribute_Request_Callback<MAX_ATTRIBUTES> attribute_shared_request_callback(&processSharedAttributes, REQUEST_TIMEOUT_MICROSECONDS, &requestTimedOut, SHARED_ATTRIBUTES_LIST);
-const Attribute_Request_Callback<MAX_ATTRIBUTES> attribute_client_request_callback(&processClientAttributes, REQUEST_TIMEOUT_MICROSECONDS, &requestTimedOut, CLIENT_ATTRIBUTES_LIST);
-
 void setup() {
-  // Initialize serial connection for debugging
+  // If analog input pin 0 is unconnected, random analog
+  // noise will cause the call to randomSeed() to generate
+  // different seed numbers each time the sketch runs.
+  // randomSeed() will then shuffle the random function.
+  randomSeed(analogRead(0));
+  // Initalize serial connection for debugging
   Serial.begin(SERIAL_DEBUG_BAUD);
-  if (LED_BUILTIN != 99) {
-    pinMode(LED_BUILTIN, OUTPUT);
-  }
   delay(1000);
-
-  secureClient.setCACert(root_ca);
-  
   InitWiFi();
+  printf("fffffffffffffffffffff");
 }
 
 void loop() {
-  delay(10);
+  delay(1000);
 
   if (!reconnect()) {
     return;
   }
-    // Sending a MAC address as an attribute
-    tb.sendAttributeData("macAddress", WiFi.macAddress().c_str());
 
-  if (attributesChanged) {
-    attributesChanged = false;
-    if (ledMode == 0) {
-      previousStateChange = millis();
-    }
-    tb.sendTelemetryData(LED_MODE_ATTR, ledMode);
-    tb.sendTelemetryData(LED_STATE_ATTR, ledState);
-    tb.sendAttributeData(LED_MODE_ATTR, ledMode);
-    tb.sendAttributeData(LED_STATE_ATTR, ledState);
-  }
-
-  if (ledMode == 1 && millis() - previousStateChange > blinkingInterval) {
-    previousStateChange = millis();
-    ledState = !ledState;
-    tb.sendTelemetryData(LED_STATE_ATTR, ledState);
-    tb.sendAttributeData(LED_STATE_ATTR, ledState);
-    if (LED_BUILTIN == 99) {
-      Serial.print("LED state changed to: ");
-      Serial.println(ledState);
-    } else {
-      digitalWrite(LED_BUILTIN, ledState);
+#if !USING_HTTPS
+  if (!tb.connected()) {
+    // Reconnect to the ThingsBoard server,
+    // if a connection was disrupted or has not yet been established
+    Serial.printf(CONNECTING_MSG, THINGSBOARD_SERVER, TOKEN);
+    if (!tb.connect(THINGSBOARD_SERVER, TOKEN, THINGSBOARD_PORT)) {
+      Serial.println("Failed to connect");
+      return;
     }
   }
+#endif
 
-  // Sending telemetry every telemetrySendInterval time
-  if (millis() - previousDataSend > telemetrySendInterval) {
-    previousDataSend = millis();
-    tb.sendTelemetryData("temperature", random(10, 20));
-    tb.sendAttributeData("rssi", WiFi.RSSI());
-    tb.sendAttributeData("channel", WiFi.channel());
-    tb.sendAttributeData("bssid", WiFi.BSSIDstr().c_str());
-    tb.sendAttributeData("localIp", WiFi.localIP().toString().c_str());
-    tb.sendAttributeData("ssid", WiFi.SSID().c_str());
-  }
+  // Uploads new Attributes to ThingsBoard using HTTP.
+  // See https://thingsboard.io/docs/reference/http-api/#attributes-api
+  // for more details
+
+  // Send each attribute individually
+  Serial.println("Sending device type attribute...");
+  tb.sendAttributeData(DEVICE_TYPE_KEY, SENSOR_VALUE);
+
+  Serial.println("Sending active attribute...");
+  tb.sendAttributeData(ACTIVE_KEY, false);
+
+
+  // Send attributes in a batch
+  Serial.println("Sending attributes batch...");
+
+  constexpr size_t ATTRIBUTES_SIZE = 2U;
+  Attribute attributes[ATTRIBUTES_SIZE] = {
+    { DEVICE_TYPE_KEY,  SENSOR_VALUE },
+    { ACTIVE_KEY,       true     },
+  };
+
+  Telemetry* begin = attributes;
+  Telemetry* end = attributes + ATTRIBUTES_SIZE;
+#if THINGSBOARD_ENABLE_DYNAMIC
+  tb.sendAttributes(begin, end);
+#else
+  tb.sendAttributes<ATTRIBUTES_SIZE>(begin, end);
+#endif // THINGSBOARD_ENABLE_DYNAMIC
+
+#if !USING_HTTPS
+  tb.loop();
+#endif
 }
-
