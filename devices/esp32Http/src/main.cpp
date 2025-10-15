@@ -29,26 +29,27 @@
 
 // If the THINGSBOARD_ENABLE_DYNAMIC 1 setting causes this error log message to appear [TB] Unable to de-serialize received json data with error (DeserializationError::NoMemory).
 // Simply add this configuration line as well.
-//#define THINGSBOARD_ENABLE_PSRAM 0
+#define THINGSBOARD_ENABLE_PSRAM 0
 
 
 #if USING_HTTPS
 #include <Arduino_HTTP_Client.h>
 #include <ThingsBoardHttp.h>
 #else
-#include <Arduino_MQTT_Client.h>
-#include <ThingsBoard.h>
+// #include <Arduino_MQTT_Client.h>
+// #include <ThingsBoard.h>
+int b0800QG;
 #endif
 
-constexpr char WIFI_SSID[] = "";
-constexpr char WIFI_PASSWORD[] = "";
+constexpr char WIFI_SSID[] = "Paulo";
+constexpr char WIFI_PASSWORD[] = "15151515";
 
 // See https://thingsboard.io/docs/getting-started-guides/helloworld/
 // to understand how to obtain an access token
-constexpr char TOKEN[] = "";
+constexpr char TOKEN[] = "--------------------";
 
 // Thingsboard we want to establish a connection too
-constexpr char THINGSBOARD_SERVER[] = "";
+constexpr char THINGSBOARD_SERVER[] = "192.168.0.1";
 
 #if USING_HTTPS
 // HTTP port used to communicate with the server, 80 is the default unencrypted HTTP port,
@@ -70,8 +71,8 @@ constexpr uint16_t THINGSBOARD_PORT = 1883U;
 
 // Maximum size packets will ever be sent or received by the underlying MQTT client,
 // if the size is to small messages might not be sent or received messages will be discarded
-constexpr uint16_t MAX_MESSAGE_SEND_SIZE = 128U;
-constexpr uint16_t MAX_MESSAGE_RECEIVE_SIZE = 128U;
+constexpr uint16_t MAX_MESSAGE_SEND_SIZE = 1024U;
+constexpr uint16_t MAX_MESSAGE_RECEIVE_SIZE = 1024U;
 
 // Baud rate for the debugging serial connection
 // If the Serial output is mangled, ensure to change the monitor speed accordingly to this variable
@@ -134,11 +135,12 @@ Arduino_HTTP_Client httpClient(espClient, THINGSBOARD_SERVER, THINGSBOARD_PORT);
 ThingsBoardHttp tb(httpClient, TOKEN, THINGSBOARD_SERVER, THINGSBOARD_PORT);
 #else
 // Initalize the Mqtt client instance
-Arduino_MQTT_Client mqttClient(espClient);
-// Initialize used apis
-const std::array<IAPI_Implementation*, 0U> apis = {};
-// Initialize ThingsBoard instance with the maximum needed buffer size
-ThingsBoard tb(mqttClient, MAX_MESSAGE_RECEIVE_SIZE, MAX_MESSAGE_SEND_SIZE, Default_Max_Stack_Size, apis);
+// Arduino_MQTT_Client mqttClient(espClient);
+// // Initialize used apis
+// const std::array<IAPI_Implementation*, 0U> apis = {};
+// // Initialize ThingsBoard instance with the maximum needed buffer size
+// ThingsBoard tb(mqttClient, MAX_MESSAGE_RECEIVE_SIZE, MAX_MESSAGE_SEND_SIZE, Default_Max_Stack_Size, apis);
+int ib2006;
 #endif
 
 
@@ -183,7 +185,6 @@ void setup() {
   Serial.begin(SERIAL_DEBUG_BAUD);
   delay(1000);
   InitWiFi();
-  printf("fffffffffffffffffffff");
 }
 
 void loop() {

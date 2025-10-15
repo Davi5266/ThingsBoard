@@ -1,0 +1,4145 @@
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ffe3be0 0x400d3df6:0x3ffe3c00 0x400e2883:0x3ffe3c20 0x40082dc1:0x3ffe3c50 0x40079316:0x3ffe3c90 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 07b532bfcaa9bcaf
+
+E (331) esp_core_dump_flash: Core dump flash config is corrupted! CRC=0x7bd5c66f instead of 0x0
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+load:0x40078000,len:13936
+load:0x40080400,len:3600
+entry 0x400805f0
+
+assert failed: tcpip_send_msg_wait_sem IDF/components/lwip/lwip/src/api/tcpip.c:455 (Invalid mbox)
+
+
+Backtrace: 0x400836ad:0x3ffe38f0 0x4008be55:0x3ffe3910 0x40091331:0x3ffe3930 0x400ee952:0x3ffe3a60 0x400fec15:0x3ffe3a90 0x400fec75:0x3ffe3ab0 0x400ee141:0x3ffe3b00 0x400d4e65:0x3ffe3b20 0x400d46a6:0x3ffe3b90 0x4014ea39:0x3ffe3bc0 0x4014e9ea:0x3ff
